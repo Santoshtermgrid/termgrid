@@ -17,6 +17,7 @@ import com.termgrid.api.appApi.pojo.users.CustomerLoginResponse;
 import com.termgrid.api.appApi.pojo.users.RegisterRequest;
 import com.termgrid.api.appApi.pojo.users.RegisterResponse;
 import com.termgrid.api.commons.RestResource;
+import com.termgrid.api.commons.utils.DataLoader;
 import com.termgrid.api.commons.utils.TermGridConstants;
 import com.termgrid.api.commons.utils.FakerUtils;
 import io.qameta.allure.Step;
@@ -64,7 +65,13 @@ if(key.equals("email") && value.equals(teamMemberEmail)){
 
             }
         }
-        ResponseBody body = RestResource.get(joinLink, TermGridConstants.admin, TermGridConstants.adminpassword).getBody();
+
+        joinLink=joinLink.split("join-team")[1];
+
+       /* https://automation.termgrid.com/join-team/9b42db75-4b72-43bc-8036-608475e6f855/company/398091
+        https://automation.termgrid.com/join-team/79a4bf00-520c-4342-a16c-ddd35ae71c90/company/126*/
+
+        ResponseBody body = RestResource.get(DataLoader.getInstance().getbaseurl()+"join-team"+joinLink, TermGridConstants.admin, TermGridConstants.adminpassword).getBody();
         /*Optional<Map<String, Object>> email1 = invite.stream()
                 .peek(System.out::println)
                 .filter(hashmap -> ((hashmap("email")) == "aasim+nov27_1santanders@inncretech.com"))
