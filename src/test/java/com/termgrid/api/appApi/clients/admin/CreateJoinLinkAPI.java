@@ -12,7 +12,7 @@ import java.util.Map;
 
 import static com.termgrid.api.appApi.endpoints.ApiEndPoints.createJoinLinkUrl;
 
-public class CreateJoinLink {
+public class CreateJoinLinkAPI {
 
 
     @Step
