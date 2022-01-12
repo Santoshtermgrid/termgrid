@@ -8,6 +8,5 @@ public class E2ETests extends BaseTest{
     @Test
     public void testCreateCompanyFlow(){
         UtilityService utilityService= new UtilityService();
-        utilityService.createCompany();
     }
 }
