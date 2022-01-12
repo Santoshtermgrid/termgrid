@@ -1,0 +1,17 @@
+package com.termgrid.api.appApi.clients.invite;
+
+import com.termgrid.api.appApi.pojo.company.AddCompanyRequest;
+import com.termgrid.api.appApi.pojo.invite.InviteRequest;
+import com.termgrid.api.commons.RestResource;
+import io.qameta.allure.Step;
+import io.restassured.response.Response;
+
+import static com.termgrid.api.appApi.endpoints.ApiEndPoints.inviteUserToTeamUrl;
+
+public class InviteAPI {
+
+    @Step
+    public static Response post(InviteRequest inviteRequest, String username, String password){
+        return RestResource.post(inviteUserToTeamUrl, inviteRequest,username,password);
+    }
+}

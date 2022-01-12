@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.utils;
+package com.termgrid.api.commons.utils;
 
 public class DummyClass {
 

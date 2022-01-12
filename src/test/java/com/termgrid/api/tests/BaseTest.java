@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.tests;
+package com.termgrid.api.tests;
 
 import org.testng.annotations.BeforeMethod;
 

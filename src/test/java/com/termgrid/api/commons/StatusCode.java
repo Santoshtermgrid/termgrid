@@ -1,4 +1,4 @@
-package com.termgrid.api;
+package com.termgrid.api.commons;
 
 public enum StatusCode {
     CODE_200(200, ""),

@@ -1,14 +1,12 @@
-package com.termgrid.api.appApi.element;
+package com.termgrid.api.appApi.clients.element;
 
-import com.termgrid.api.RestResource;
-import com.termgrid.api.appApi.pojo.element.AddPETransactionPojo;
+import com.termgrid.api.commons.RestResource;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
 
-import static com.termgrid.api.ApiEndPoints.addPETransactionUrl;
-import static com.termgrid.api.ApiEndPoints.getPETransactionUrl;
+import static com.termgrid.api.appApi.endpoints.ApiEndPoints.getPETransactionUrl;
 
 public class GetPETransactionAPI {
 

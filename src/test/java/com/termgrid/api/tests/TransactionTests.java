@@ -1,15 +1,14 @@
-package com.termgrid.api.appApi.tests;
+package com.termgrid.api.tests;
 
-import com.termgrid.api.StatusCode;
-import com.termgrid.api.appApi.element.AddPETransactionAPI;
-import com.termgrid.api.appApi.element.DeletePETransactionApi;
-import com.termgrid.api.appApi.element.GetPETransactionAPI;
-import com.termgrid.api.appApi.pojo.element.AddPETransactionPojo;
-import com.termgrid.api.appApi.pojo.element.AddPETransactionResponse;
+import com.termgrid.api.commons.StatusCode;
+import com.termgrid.api.appApi.clients.element.AddPETransactionAPI;
+import com.termgrid.api.appApi.clients.element.DeletePETransactionApi;
+import com.termgrid.api.appApi.clients.element.GetPETransactionAPI;
+import com.termgrid.api.appApi.pojo.element.AddPETransactionRequest;
 import com.termgrid.api.appApi.pojo.element.GetPETransactionResponse;
 import com.termgrid.api.appApi.pojo.element.IndustryDTOSet;
+import com.termgrid.api.commons.utils.DataLoader;
 import io.qameta.allure.*;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -27,7 +26,7 @@ public class TransactionTests extends BaseTest {
     @Description("should be able to create a peTransaction")
     @Test(description = "should be able to create a peTransaction")
     public void ShouldBeAbleToCreateTransaction() {
-        AddPETransactionPojo payload = AddPETransactionPojo.builder().
+        AddPETransactionRequest payload = AddPETransactionRequest.builder().
                 companyId("2")
                 .companyToBuy("Test Company")
                 .peTransactionTitle("Automatin1")
@@ -36,7 +35,7 @@ public class TransactionTests extends BaseTest {
                         .id("10966")
                         .approved(true).name("Chemicals").build())).build();
 
-        Response response = AddPETransactionAPI.post(payload);
+        Response response = AddPETransactionAPI.post(payload, DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword());
 
         transactionId=response.jsonPath().getString("peTransactionId");
 
@@ -61,7 +60,7 @@ public class TransactionTests extends BaseTest {
     @Description("With Wrong AUth, user should not able to delete transaction")
     @Test(description = "With Wrong AUth, user should not able to delete transaction")
     public void ShouldNotbeAbleCreateTransactionWithWrongAuth() {
-        AddPETransactionPojo payload = AddPETransactionPojo.builder().
+        AddPETransactionRequest payload = AddPETransactionRequest.builder().
                 companyId("2")
                 .companyToBuy("Test Company")
                 .peTransactionTitle("Automatin1")

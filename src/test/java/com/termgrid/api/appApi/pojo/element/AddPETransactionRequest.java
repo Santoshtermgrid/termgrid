@@ -13,7 +13,7 @@ import lombok.extern.jackson.Jacksonized;
 @Data
 @Jacksonized
 @Builder
-public class AddPETransactionPojo {
+public class AddPETransactionRequest {
     @JsonProperty("peTransactionTitle")
     public String peTransactionTitle;
     @JsonProperty("companyToBuy")

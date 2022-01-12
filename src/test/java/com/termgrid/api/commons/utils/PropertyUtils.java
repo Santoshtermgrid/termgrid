@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.utils;
+package com.termgrid.api.commons.utils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

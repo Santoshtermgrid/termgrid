@@ -1,6 +1,6 @@
-package com.termgrid.api;
+package com.termgrid.api.commons;
 
-import com.termgrid.api.appApi.utils.DataLoader;
+import com.termgrid.api.commons.utils.DataLoader;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
