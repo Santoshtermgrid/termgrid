@@ -6,7 +6,7 @@ import com.termgrid.api.commons.RestResource;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
-import static com.termgrid.api.appApi.endpoints.ApiEndPoints.;
+import static com.termgrid.api.appApi.endpoints.ApiEndPoints.*;
 
 public class JoinTeamLoginAPI {
 
