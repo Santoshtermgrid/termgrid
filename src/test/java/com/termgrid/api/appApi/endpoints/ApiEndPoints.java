@@ -12,6 +12,7 @@ public class ApiEndPoints {
     public static final String getUserTeamUrl="/api/rest/team";
     public static final String inviteUserToTeamUrl="api/rest/invite";
     public static final String createJoinLinkUrl="api/rest/admin/dashboard/createJoinLink/";
-
+    public  static final String updateTransactionUrl="/api/rest/admin/dashboard/updateTeamMemberTransactionRights";
+public  static  final String getUser="api/rest/users/getUser";
 
 }

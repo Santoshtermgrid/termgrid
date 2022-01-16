@@ -1,8 +1,7 @@
 package com.termgrid.api.appApi.clients.invite;
 
-import com.termgrid.api.appApi.pojo.company.AddCompanyRequest;
-import com.termgrid.api.appApi.pojo.invite.InviteRequest;
-import com.termgrid.api.commons.RestResource;
+import com.termgrid.api.appApi.pojos.invite.InviteRequest;
+import com.termgrid.api.appApi.clients.commons.restassured.RestResource;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 

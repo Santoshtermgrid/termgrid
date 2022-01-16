@@ -1,8 +1,8 @@
 package com.termgrid.api.appApi.clients.users;
 
-import com.termgrid.api.appApi.pojo.users.RegisterResponse;
-import com.termgrid.api.commons.RestResource;
-import com.termgrid.api.appApi.pojo.users.RegisterRequest;
+import com.termgrid.api.appApi.pojos.users.RegisterResponse;
+import com.termgrid.api.appApi.clients.commons.restassured.RestResource;
+import com.termgrid.api.appApi.pojos.users.RegisterRequest;
 import io.qameta.allure.Step;
 
 import static com.termgrid.api.appApi.endpoints.ApiEndPoints.registerLoginUrl;

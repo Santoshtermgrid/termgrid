@@ -1,6 +1,6 @@
 package com.termgrid.api.appApi.clients.element;
 
-import com.termgrid.api.commons.RestResource;
+import com.termgrid.api.appApi.clients.commons.restassured.RestResource;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 

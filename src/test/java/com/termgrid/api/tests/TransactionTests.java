@@ -1,13 +1,13 @@
 package com.termgrid.api.tests;
 
-import com.termgrid.api.commons.StatusCode;
+import com.termgrid.api.appApi.clients.commons.restassured.StatusCode;
 import com.termgrid.api.appApi.clients.element.AddPETransactionAPI;
 import com.termgrid.api.appApi.clients.element.DeletePETransactionApi;
 import com.termgrid.api.appApi.clients.element.GetPETransactionAPI;
-import com.termgrid.api.appApi.pojo.element.AddPETransactionRequest;
-import com.termgrid.api.appApi.pojo.element.GetPETransactionResponse;
-import com.termgrid.api.appApi.pojo.element.IndustryDTOSet;
-import com.termgrid.api.commons.utils.DataLoader;
+import com.termgrid.api.appApi.pojos.element.AddPETransactionRequest;
+import com.termgrid.api.appApi.pojos.element.GetPETransactionResponse;
+import com.termgrid.api.appApi.pojos.element.IndustryDTOSet;
+import com.termgrid.api.appApi.clients.commons.utils.DataLoader;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

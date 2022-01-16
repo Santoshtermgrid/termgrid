@@ -1,7 +1,7 @@
 package com.termgrid.api.appApi.clients.users;
 
-import com.termgrid.api.appApi.pojo.users.CustomerLoginRequest;
-import com.termgrid.api.commons.RestResource;
+import com.termgrid.api.appApi.pojos.users.CustomerLoginRequest;
+import com.termgrid.api.appApi.clients.commons.restassured.RestResource;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
