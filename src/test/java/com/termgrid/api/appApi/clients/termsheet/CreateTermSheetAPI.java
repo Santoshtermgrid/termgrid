@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import java.util.Map;
 import static com.termgrid.api.appApi.endpoints.ApiEndPoints.*;
 
-public class CreateWebFormConfigAPI {
+public class CreateTermSheetAPI {
 
     @Step
     public static Response post(AddTermSheetPojo addTermSheet){

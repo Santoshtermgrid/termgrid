@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.pojo.createEvent;
+package com.termgrid.api.appApi.pojo.deleteEvent;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,9 +10,13 @@ import lombok.extern.jackson.Jacksonized;
 @Data
 @Jacksonized
 @Builder
-public class LenderDTO {
+public class DeleteLenderDTOPojo {
     @JsonProperty("id")
     public String id;
     @JsonProperty("name")
     public String name;
+    @JsonProperty("webFormIndex")
+    public String webFormIndex;
+    @JsonProperty("active")
+    public boolean active;
 }

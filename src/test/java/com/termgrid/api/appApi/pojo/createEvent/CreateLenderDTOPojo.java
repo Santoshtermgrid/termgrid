@@ -10,7 +10,7 @@ import lombok.extern.jackson.Jacksonized;
 @Data
 @Jacksonized
 @Builder
-public class LenderDTO {
+public class CreateLenderDTOPojo {
     @JsonProperty("id")
     public String id;
     @JsonProperty("name")

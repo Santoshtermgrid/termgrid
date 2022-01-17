@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.requestPojo;
+package com.termgrid.api.appApi.pojo.assignlendertotrans;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

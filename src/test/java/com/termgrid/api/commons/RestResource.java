@@ -18,11 +18,11 @@ public class RestResource {
                 body(body).
                 /*auth().preemptive().
                 basic(DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword()).*/
-                contentType(ContentType.JSON).
-        when().post(path).
-        then().spec(getResponseSpec()).
-                extract().
-                response();
+                        contentType(ContentType.JSON).
+                        when().post(path).
+                        then().spec(getResponseSpec()).
+                        extract().
+                        response();
     }
 
     public static Response post(String path, Object body,String username,String password){
@@ -30,12 +30,37 @@ public class RestResource {
                 body(body).
                 auth().preemptive().
                 basic(username,password).
-                        contentType(ContentType.JSON).
-                        when().post(path).
-                        then().spec(getResponseSpec()).
-                        extract().
-                        response();
+                contentType(ContentType.JSON).
+                when().post(path).
+                then().spec(getResponseSpec()).
+                extract().
+                response();
     }
+
+    public static Response post(String path, Object body, Map<String, String> pathParams){
+        return given(getRequestSpec()).
+                body(body).pathParams(pathParams).
+                auth().preemptive().
+                basic(DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword()).
+                contentType(ContentType.JSON).
+                when().post(path).
+                then().spec(getResponseSpec()).
+                extract().
+                response();
+    }
+
+    public static Response post(String path, Object body, String queryParams){
+        return given(getRequestSpec()).
+                body(body).queryParam(queryParams).
+                auth().preemptive().
+                basic(DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword()).
+                contentType(ContentType.JSON).
+                when().post(path).
+                then().spec(getResponseSpec()).
+                extract().
+                response();
+    }
+
     public static Response post(String token,String path, Object body){
         return given(getRequestSpec()).
                 body(body).headers("Authorization",token).
@@ -61,8 +86,8 @@ public class RestResource {
     public static Response get(String path){
         return given(getRequestSpec()).
                 auth().basic(DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword()).
-        when().get(path).
-        then().spec(getResponseSpec()).
+                when().get(path).
+                then().spec(getResponseSpec()).
                 extract().
                 response();
     }
@@ -100,10 +125,8 @@ public class RestResource {
     public static Response getbyPathParams(String path,HashMap<String,String> pathParams,String token){
         return given(getRequestSpec()).headers("Authorization",token)
                 .when().get(path).
-                then().spec(getResponseSpec()).
-                extract().
-                response();
+                        then().spec(getResponseSpec()).
+                        extract().
+                        response();
     }
-
-
 }

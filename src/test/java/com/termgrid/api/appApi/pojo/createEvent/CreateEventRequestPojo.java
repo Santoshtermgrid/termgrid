@@ -1,4 +1,4 @@
-package com.termgrid.api.appApi.pojo.eventUnderDeal;
+package com.termgrid.api.appApi.pojo.createEvent;
 
 import java.util.ArrayList;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,5 +23,5 @@ public class CreateEventRequestPojo {
     @JsonProperty("peTransactionId")
     public String peTransactionId;
     @JsonProperty("lenderDTOS")
-    public ArrayList<LenderDTO> lenderDTOS;
+    public ArrayList<CreateLenderDTOPojo> lenderDTOS;
 }
