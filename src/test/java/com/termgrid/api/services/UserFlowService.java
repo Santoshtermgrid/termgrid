@@ -6,6 +6,7 @@ import com.termgrid.api.appApi.clients.admin.UpdateTransactionRightsAPI;
 import com.termgrid.api.appApi.clients.company.AddCompanyAPI;
 import com.termgrid.api.appApi.clients.invite.InviteAPI;
 import com.termgrid.api.appApi.clients.users.CustomerLoginAPI;
+import com.termgrid.api.appApi.clients.users.GetUserDetails;
 import com.termgrid.api.appApi.clients.users.RegisterLoginAPI;
 import com.termgrid.api.appApi.clients.users.VerifyEmailAPI;
 import com.termgrid.api.appApi.pojos.admin.JoinTeamLoginRequest;
@@ -15,10 +16,7 @@ import com.termgrid.api.appApi.pojos.company.AddCompanyResponse;
 import com.termgrid.api.appApi.pojos.company.Geography;
 import com.termgrid.api.appApi.pojos.company.Industry;
 import com.termgrid.api.appApi.pojos.invite.InviteRequest;
-import com.termgrid.api.appApi.pojos.users.CustomerLoginRequest;
-import com.termgrid.api.appApi.pojos.users.CustomerLoginResponse;
-import com.termgrid.api.appApi.pojos.users.RegisterRequest;
-import com.termgrid.api.appApi.pojos.users.RegisterResponse;
+import com.termgrid.api.appApi.pojos.users.*;
 import com.termgrid.api.appApi.clients.commons.utils.DataLoader;
 import com.termgrid.api.appApi.clients.commons.utils.FakerUtils;
 import com.termgrid.api.appApi.clients.commons.utils.TermGridConstants;
@@ -53,6 +51,11 @@ public class UserFlowService {
     @Step
     public UpdateTransactionRequest updateTransactionRequest(RegisterResponse registerResponse) {
         return UpdateTransactionRequest.builder().email(registerResponse.getEmail()).status(true).build();
+    }
+
+    @Step
+    public GetUserDetailsResponse getUserDetails(String username) {
+        return GetUserDetails.get(username);
     }
     @Step
     public String newAdminTeamUserPasswordSet(String joinLink) {
@@ -89,6 +92,11 @@ public class UserFlowService {
         List<Map<String, Object>> responseBody = InviteAPI.post(teamMember(addCompanyResponse), registerResponse.email, TermGridConstants.password).getBody().as(new TypeRef<List<Map<String, Object>>>() {
         });
         return responseBody.get(0).get("email").toString();
+    }
+    @Step
+    public List<Map<String, Object>>   registerNewDealTeamMemberResponse(RegisterResponse registerResponse, AddCompanyResponse addCompanyResponse) {
+       return InviteAPI.post(teamMember(addCompanyResponse), registerResponse.email, TermGridConstants.password).getBody().as(new TypeRef<List<Map<String, Object>>>() {
+        });
     }
     @Step
     public AddCompanyResponse createNewCompany(CustomerLoginResponse customerLoginResponse) {

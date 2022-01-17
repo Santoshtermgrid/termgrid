@@ -8,8 +8,19 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserFlowContext {
 
-        String adminEmail;
-        String adminUserId;
+        String user1Emailid;
+        String user1UserId;
+        String companyId;
+        String teamMember1EmailId;
+        String teamMember1UserId;
+        String teamMember1invitationStatus;
+        String adminJoinLinkUrl;
+        Boolean teamMember1createTransactionStatus;
+        Boolean user1createTransactionStatus;
+        String industriesId;
+        String industryName;
+        String peTransactionId;
+
 
 
 }

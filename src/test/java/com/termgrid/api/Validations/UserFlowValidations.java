@@ -7,16 +7,22 @@ import org.testng.Assert;
 
 public class UserFlowValidations {
 
-    public static void Validator_newUserRegistration(UserFlowContext userContext, RegisterResponse registerResponse) {
+    public static void Validator_newUserRegistration(RegisterResponse registerResponse) {
         Assert.assertFalse(registerResponse.emailVerified);
         Assert.assertTrue(registerResponse.isActive);
-        userContext.setAdminEmail(registerResponse.email);
-        userContext.setAdminUserId(registerResponse.userId);
+
     }
 
     public static void Validator_after_admin_verification_login_to_user_account(CustomerLoginResponse customerLoginResponse){
         Assert.assertFalse(customerLoginResponse.createTransaction);
         Assert.assertTrue(customerLoginResponse.emailVerified);
         Assert.assertTrue(customerLoginResponse.isActive);
+    }
+
+    public static  void Validator_login_checks(CustomerLoginResponse customerLoginResponse)
+    {
+        Assert.assertTrue(customerLoginResponse.isActive);
+        Assert.assertTrue(customerLoginResponse.createTransaction);
+        Assert.assertTrue(customerLoginResponse.emailVerified);
     }
 }

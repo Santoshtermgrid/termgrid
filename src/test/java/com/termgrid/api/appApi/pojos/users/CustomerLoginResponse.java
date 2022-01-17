@@ -26,6 +26,8 @@ public class CustomerLoginResponse {
         public String phoneNumber;
         @JsonProperty("authToken")
         public String authToken;
+        public  String companyId;
+        public  String isAdmin;
         @JsonProperty("emailVerified")
         public Boolean emailVerified;
         @JsonProperty("createTransaction")
