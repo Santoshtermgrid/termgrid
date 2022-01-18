@@ -20,6 +20,11 @@ public class UserFlowContext {
         String industriesId;
         String industryName;
         String peTransactionId;
+        String termSheetId;
+        String dataRoomID;
+        String lenderID;
+        String lenderName;
+        String userID;
 
 
 

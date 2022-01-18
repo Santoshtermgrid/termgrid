@@ -16,4 +16,9 @@ public class GetUserDetails {
     public static GetUserDetailsResponse get(String username){
         return RestResource.get(getUserUrl, username, TermGridConstants.password).getBody().as(GetUserDetailsResponse.class);
     }
+
+    @Step
+    public static Response get(String username, String password){
+        return RestResource.get(getUserUrl, username,password);
+    }
 }
