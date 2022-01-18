@@ -22,7 +22,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Build with Maven
-        run: mvn test allure:report
+        run: mvn test allure:report allure:serve
       - uses: actions/checkout@v2
 
       - name: Get Allure history
