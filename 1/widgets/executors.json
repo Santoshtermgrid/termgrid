@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Santoshtermgrid.github.io/termgrid",
+  "buildOrder" : 1,
+  "buildName" : "GitHub Actions Run #1715124102",
+  "buildUrl" : "https://github.com/Santoshtermgrid/termgrid/actions/runs/1715124102",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Santoshtermgrid.github.io/termgrid/1/"
+} ]

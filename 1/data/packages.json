@@ -1,5 +1,191 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "com.termgrid.api.tests.E2ETests",
+    "children" : [ {
+      "name" : "verify_newUserRegistration",
+      "uid" : "5b766dfd92474e6",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544605176,
+        "stop" : 1642544608935,
+        "duration" : 3759
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testCreateCompanyFlow",
+      "uid" : "45bca9938e1b0000",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544605180,
+        "stop" : 1642544613404,
+        "duration" : 8224
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_admin_approval_registration_flow",
+      "uid" : "1aa018c9803c4a3a",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544608969,
+        "stop" : 1642544610019,
+        "duration" : 1050
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "after_admin_verification_login_to_user_account",
+      "uid" : "30e2cb059200f32e",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544610037,
+        "stop" : 1642544610364,
+        "duration" : 327
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "check_after_userlogin_create_company",
+      "uid" : "3c12759e0243ad15",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544610374,
+        "stop" : 1642544610718,
+        "duration" : 344
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "user_invites_team_members_to_company",
+      "uid" : "f91f87a0a8028840",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544610750,
+        "stop" : 1642544611347,
+        "duration" : 597
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "check_team_members_status_is_pending",
+      "uid" : "c66153fba2b27ab8",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544611359,
+        "stop" : 1642544611359,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_admin_approval_flow_for_team_members",
+      "uid" : "fcf6dcf84bdd8e48",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544611365,
+        "stop" : 1642544612578,
+        "duration" : 1213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "check_team_members_status_is_accepted_after_admin_approval_flow",
+      "uid" : "15ef39bde94de769",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544612597,
+        "stop" : 1642544613353,
+        "duration" : 756
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "check_userbydefault_is_disabled_creating_new_transaction",
+      "uid" : "a61fd505d6a3f20e",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544613371,
+        "stop" : 1642544613371,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_post_admin_approval_create_transaction_is_enabled_for_user",
+      "uid" : "7a2b4d7dcfc1496b",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544613375,
+        "stop" : 1642544614556,
+        "duration" : 1181
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_team_member_is_allowed_to_login_after_approval",
+      "uid" : "849f7f0b5b2ef89a",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544614560,
+        "stop" : 1642544614851,
+        "duration" : 291
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_user1_is_allowed_to_login_after_approval",
+      "uid" : "1e8c55318a3a4aa4",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544614560,
+        "stop" : 1642544614853,
+        "duration" : 293
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify_team_member_is_allowed_to_create_transaction",
+      "uid" : "b487905690361475",
+      "parentUid" : "aae84f3abcbca31688edcb11adf72ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642544614858,
+        "stop" : 1642544615372,
+        "duration" : 514
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.termgrid.api.tests.E2ETests"
+  } ],
   "name" : "packages"
 }

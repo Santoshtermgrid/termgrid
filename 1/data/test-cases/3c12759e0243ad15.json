@@ -1,0 +1,157 @@
+{
+  "uid" : "3c12759e0243ad15",
+  "name" : "check_after_userlogin_create_company",
+  "fullName" : "com.termgrid.api.tests.E2ETests.check_after_userlogin_create_company",
+  "historyId" : "aeb1725aeda2762bf0940d7440d48fc5",
+  "time" : {
+    "start" : 1642544610374,
+    "stop" : 1642544610718,
+    "duration" : 344
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642544610368,
+      "stop" : 1642544610368,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "createNewCompany",
+      "time" : {
+        "start" : 1642544610374,
+        "stop" : 1642544610716,
+        "duration" : 342
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "addCompanyRequest",
+        "time" : {
+          "start" : 1642544610374,
+          "stop" : 1642544610381,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "post",
+        "time" : {
+          "start" : 1642544610383,
+          "stop" : 1642544610712,
+          "duration" : 329
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e449374e0a65e6dd",
+          "name" : "Request",
+          "source" : "e449374e0a65e6dd.html",
+          "type" : "text/html",
+          "size" : 1829
+        }, {
+          "uid" : "27075b94ebe77bc2",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "27075b94ebe77bc2.html",
+          "type" : "text/html",
+          "size" : 1414
+        } ],
+        "parameters" : [ {
+          "name" : "addCompanyRequest",
+          "value" : "AddCompanyRequest(name=Mr Krypto the Fated03e82f45-0151-4bbc-b43a-f4e359293eba, industries=[Industry(id=10966, name=Chemicals, active=true, approved=true)], geographies=[Geography(id=4, name=Asia, active=true, selected=true)])"
+        }, {
+          "name" : "username",
+          "value" : "santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com"
+        }, {
+          "name" : "password",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "customerLoginResponse",
+        "value" : "CustomerLoginResponse(email=santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com, userId=null, firstName=null, lastName=null, isActive=null, phoneNumber=null, authToken=null, companyId=null, isAdmin=null, emailVerified=null, createTransaction=null, lastLogin=null, elementPermissions=null)"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testMethod",
+    "value" : "check_after_userlogin_create_company"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-33"
+  }, {
+    "name" : "thread",
+    "value" : "2844@fv-az189-33.TestNG-test=Surefire test-5(17)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c12759e0243ad15.json",
+  "parameterValues" : [ ]
+}

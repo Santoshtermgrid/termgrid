@@ -1,0 +1,48 @@
+<div>POST to http://testing.termgrid.com:9500/api/rest/element/addPETransaction</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;peTransactionTitle&quot;: &quot;Automatin1&quot;,
+    &quot;companyToBuy&quot;: &quot;Test Company&quot;,
+    &quot;targetDate&quot;: 1640889000000,
+    &quot;companyId&quot;: &quot;476339&quot;,
+    &quot;industryDTOSet&quot;: [
+        {
+            &quot;id&quot;: &quot;10966&quot;,
+            &quot;name&quot;: &quot;Chemicals&quot;,
+            &quot;active&quot;: true,
+            &quot;approved&quot;: true
+        }
+    ]
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Basic QWxsZW5hMzViZjQwZDQtMDczNy00NThhLWFmN2EtOTlkMWFmYjk1ZTQyQHRlcm1ncmlkLmNvbTp0ZXN0</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://testing.termgrid.com:9500/api/rest/element/addPETransaction&#39; -H &#39;Authorization: Basic QWxsZW5hMzViZjQwZDQtMDczNy00NThhLWFmN2EtOTlkMWFmYjk1ZTQyQHRlcm1ncmlkLmNvbTp0ZXN0&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;peTransactionTitle&quot;: &quot;Automatin1&quot;,
+    &quot;companyToBuy&quot;: &quot;Test Company&quot;,
+    &quot;targetDate&quot;: 1640889000000,
+    &quot;companyId&quot;: &quot;476339&quot;,
+    &quot;industryDTOSet&quot;: [
+        {
+            &quot;id&quot;: &quot;10966&quot;,
+            &quot;name&quot;: &quot;Chemicals&quot;,
+            &quot;active&quot;: true,
+            &quot;approved&quot;: true
+        }
+    ]
+}&#39;
+</div>

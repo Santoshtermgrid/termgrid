@@ -1,0 +1,58 @@
+<div>POST to http://testing.termgrid.com:9500/api/rest/company</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;name&quot;: &quot;Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022&quot;,
+    &quot;industries&quot;: [
+        {
+            &quot;id&quot;: &quot;10966&quot;,
+            &quot;name&quot;: &quot;Chemicals&quot;,
+            &quot;active&quot;: true,
+            &quot;approved&quot;: true
+        }
+    ],
+    &quot;geographies&quot;: [
+        {
+            &quot;id&quot;: &quot;4&quot;,
+            &quot;name&quot;: &quot;Asia&quot;,
+            &quot;active&quot;: true,
+            &quot;selected&quot;: true
+        }
+    ]
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Basic c2FudG9zaCswNzIxNzczNi00ZTExLTQ2NjctODVkYy1kZWVmMDJmNDQ2NzZAdGVybWdyaWQuY29tOnRlc3Q=</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://testing.termgrid.com:9500/api/rest/company&#39; -H &#39;Authorization: Basic c2FudG9zaCswNzIxNzczNi00ZTExLTQ2NjctODVkYy1kZWVmMDJmNDQ2NzZAdGVybWdyaWQuY29tOnRlc3Q=&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;name&quot;: &quot;Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022&quot;,
+    &quot;industries&quot;: [
+        {
+            &quot;id&quot;: &quot;10966&quot;,
+            &quot;name&quot;: &quot;Chemicals&quot;,
+            &quot;active&quot;: true,
+            &quot;approved&quot;: true
+        }
+    ],
+    &quot;geographies&quot;: [
+        {
+            &quot;id&quot;: &quot;4&quot;,
+            &quot;name&quot;: &quot;Asia&quot;,
+            &quot;active&quot;: true,
+            &quot;selected&quot;: true
+        }
+    ]
+}&#39;
+</div>

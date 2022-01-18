@@ -1,4 +1,16 @@
 [ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://Santoshtermgrid.github.io/termgrid/1/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 14,
+    "unknown" : 0,
+    "total" : 14
+  }
+}, {
   "data" : {
     "failed" : 0,
     "broken" : 0,

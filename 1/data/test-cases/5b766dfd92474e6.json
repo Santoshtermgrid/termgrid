@@ -1,0 +1,148 @@
+{
+  "uid" : "5b766dfd92474e6",
+  "name" : "verify_newUserRegistration",
+  "fullName" : "com.termgrid.api.tests.E2ETests.verify_newUserRegistration",
+  "historyId" : "25561c540fa40fabd197590af70435ba",
+  "time" : {
+    "start" : 1642544605176,
+    "stop" : 1642544608935,
+    "duration" : 3759
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642544604939,
+      "stop" : 1642544604944,
+      "duration" : 5
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "newUserRegistration",
+      "time" : {
+        "start" : 1642544605199,
+        "stop" : 1642544608928,
+        "duration" : 3729
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getLoginInfo",
+        "time" : {
+          "start" : 1642544605199,
+          "stop" : 1642544605564,
+          "duration" : 365
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "post",
+        "time" : {
+          "start" : 1642544605564,
+          "stop" : 1642544608928,
+          "duration" : 3364
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ce3c79b57d4236b6",
+          "name" : "Request",
+          "source" : "ce3c79b57d4236b6.html",
+          "type" : "text/html",
+          "size" : 1077
+        }, {
+          "uid" : "7c0ff1ef72ab593e",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "7c0ff1ef72ab593e.html",
+          "type" : "text/html",
+          "size" : 1175
+        } ],
+        "parameters" : [ {
+          "name" : "register",
+          "value" : "RegisterRequest(firstName=Karl, lastName=Harris, email=santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com, phoneNumber=587-367-3502 x4779, password=test, repassword=null)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify_newUserRegistration"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-33"
+  }, {
+    "name" : "thread",
+    "value" : "2844@fv-az189-33.TestNG-test=Surefire test-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5b766dfd92474e6.json",
+  "parameterValues" : [ ]
+}

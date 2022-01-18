@@ -1,1 +1,141 @@
-[ ]
+[ {
+  "uid" : "7a2b4d7dcfc1496b",
+  "name" : "verify_post_admin_approval_create_transaction_is_enabled_for_user",
+  "time" : {
+    "start" : 1642544613375,
+    "stop" : 1642544614556,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c66153fba2b27ab8",
+  "name" : "check_team_members_status_is_pending",
+  "time" : {
+    "start" : 1642544611359,
+    "stop" : 1642544611359,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fcf6dcf84bdd8e48",
+  "name" : "verify_admin_approval_flow_for_team_members",
+  "time" : {
+    "start" : 1642544611365,
+    "stop" : 1642544612578,
+    "duration" : 1213
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1aa018c9803c4a3a",
+  "name" : "verify_admin_approval_registration_flow",
+  "time" : {
+    "start" : 1642544608969,
+    "stop" : 1642544610019,
+    "duration" : 1050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c12759e0243ad15",
+  "name" : "check_after_userlogin_create_company",
+  "time" : {
+    "start" : 1642544610374,
+    "stop" : 1642544610718,
+    "duration" : 344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f91f87a0a8028840",
+  "name" : "user_invites_team_members_to_company",
+  "time" : {
+    "start" : 1642544610750,
+    "stop" : 1642544611347,
+    "duration" : 597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45bca9938e1b0000",
+  "name" : "testCreateCompanyFlow",
+  "time" : {
+    "start" : 1642544605180,
+    "stop" : 1642544613404,
+    "duration" : 8224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b766dfd92474e6",
+  "name" : "verify_newUserRegistration",
+  "time" : {
+    "start" : 1642544605176,
+    "stop" : 1642544608935,
+    "duration" : 3759
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15ef39bde94de769",
+  "name" : "check_team_members_status_is_accepted_after_admin_approval_flow",
+  "time" : {
+    "start" : 1642544612597,
+    "stop" : 1642544613353,
+    "duration" : 756
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a61fd505d6a3f20e",
+  "name" : "check_userbydefault_is_disabled_creating_new_transaction",
+  "time" : {
+    "start" : 1642544613371,
+    "stop" : 1642544613371,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30e2cb059200f32e",
+  "name" : "after_admin_verification_login_to_user_account",
+  "time" : {
+    "start" : 1642544610037,
+    "stop" : 1642544610364,
+    "duration" : 327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b487905690361475",
+  "name" : "verify_team_member_is_allowed_to_create_transaction",
+  "time" : {
+    "start" : 1642544614858,
+    "stop" : 1642544615372,
+    "duration" : 514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e8c55318a3a4aa4",
+  "name" : "verify_user1_is_allowed_to_login_after_approval",
+  "time" : {
+    "start" : 1642544614560,
+    "stop" : 1642544614853,
+    "duration" : 293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "849f7f0b5b2ef89a",
+  "name" : "verify_team_member_is_allowed_to_login_after_approval",
+  "time" : {
+    "start" : 1642544614560,
+    "stop" : 1642544614851,
+    "duration" : 291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

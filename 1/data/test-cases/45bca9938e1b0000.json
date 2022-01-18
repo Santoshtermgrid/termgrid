@@ -1,0 +1,619 @@
+{
+  "uid" : "45bca9938e1b0000",
+  "name" : "testCreateCompanyFlow",
+  "fullName" : "com.termgrid.api.tests.E2ETests.testCreateCompanyFlow",
+  "historyId" : "c4672e2a86883257762f53d6d063a5a3",
+  "time" : {
+    "start" : 1642544605180,
+    "stop" : 1642544613404,
+    "duration" : 8224
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642544604941,
+      "stop" : 1642544604945,
+      "duration" : 4
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "createCompany",
+      "time" : {
+        "start" : 1642544605203,
+        "stop" : 1642544613401,
+        "duration" : 8198
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "newUserRegistration",
+        "time" : {
+          "start" : 1642544605203,
+          "stop" : 1642544608925,
+          "duration" : 3722
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "getLoginInfo",
+          "time" : {
+            "start" : 1642544605203,
+            "stop" : 1642544605550,
+            "duration" : 347
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544605560,
+            "stop" : 1642544608925,
+            "duration" : 3365
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "858747ae718488b",
+            "name" : "Request",
+            "source" : "858747ae718488b.html",
+            "type" : "text/html",
+            "size" : 1075
+          }, {
+            "uid" : "e92d3f8d8f2a3176",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "e92d3f8d8f2a3176.html",
+            "type" : "text/html",
+            "size" : 1174
+          } ],
+          "parameters" : [ {
+            "name" : "register",
+            "value" : "RegisterRequest(firstName=Ettie, lastName=Vandervort, email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, phoneNumber=343.457.7113, password=test, repassword=null)"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "adminVerificationForNewUser",
+        "time" : {
+          "start" : 1642544608925,
+          "stop" : 1642544610009,
+          "duration" : 1084
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "get",
+          "time" : {
+            "start" : 1642544608929,
+            "stop" : 1642544609389,
+            "duration" : 460
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b6a3ce1349462b42",
+            "name" : "Request",
+            "source" : "b6a3ce1349462b42.html",
+            "type" : "text/html",
+            "size" : 713
+          }, {
+            "uid" : "76fe6ba2638aacf",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "76fe6ba2638aacf.html",
+            "type" : "text/html",
+            "size" : 864
+          } ],
+          "parameters" : [ {
+            "name" : "pathParams",
+            "value" : "{emailId=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com}"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=7dc99db786ee32a9c15c57a5603c716332373bf1c7e1dcab1cec627698fa8ed5, emailVerified=false, elementPermissions=[])"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "newUserLoginPostVerification",
+        "time" : {
+          "start" : 1642544610009,
+          "stop" : 1642544610361,
+          "duration" : 352
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544610012,
+            "stop" : 1642544610348,
+            "duration" : 336
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "f18bcfcde49fb583",
+            "name" : "Request",
+            "source" : "f18bcfcde49fb583.html",
+            "type" : "text/html",
+            "size" : 779
+          }, {
+            "uid" : "9ef688e234aeebbb",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "9ef688e234aeebbb.html",
+            "type" : "text/html",
+            "size" : 1308
+          } ],
+          "parameters" : [ {
+            "name" : "customerLogin",
+            "value" : "CustomerLoginRequest(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, password=test)"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=7dc99db786ee32a9c15c57a5603c716332373bf1c7e1dcab1cec627698fa8ed5, emailVerified=false, elementPermissions=[])"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "createNewCompany",
+        "time" : {
+          "start" : 1642544610361,
+          "stop" : 1642544610732,
+          "duration" : 371
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "addCompanyRequest",
+          "time" : {
+            "start" : 1642544610361,
+            "stop" : 1642544610384,
+            "duration" : 23
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544610384,
+            "stop" : 1642544610730,
+            "duration" : 346
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "5702a94cbe9be1bd",
+            "name" : "Request",
+            "source" : "5702a94cbe9be1bd.html",
+            "type" : "text/html",
+            "size" : 1813
+          }, {
+            "uid" : "60a529073bb98ccb",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "60a529073bb98ccb.html",
+            "type" : "text/html",
+            "size" : 1406
+          } ],
+          "parameters" : [ {
+            "name" : "addCompanyRequest",
+            "value" : "AddCompanyRequest(name=Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022, industries=[Industry(id=10966, name=Chemicals, active=true, approved=true)], geographies=[Geography(id=4, name=Asia, active=true, selected=true)])"
+          }, {
+            "name" : "username",
+            "value" : "santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com"
+          }, {
+            "name" : "password",
+            "value" : "test"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "customerLoginResponse",
+          "value" : "CustomerLoginResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=6e30cc6ae59718192b3032f2d27e0d4582f849b3e9071a32989df209cc0afbb8, companyId=null, isAdmin=null, emailVerified=true, createTransaction=false, lastLogin=null, elementPermissions=[])"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerNewDealTeamMember",
+        "time" : {
+          "start" : 1642544610732,
+          "stop" : 1642544611387,
+          "duration" : 655
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "teamMember",
+          "time" : {
+            "start" : 1642544610733,
+            "stop" : 1642544610928,
+            "duration" : 195
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "addCompanyResponse",
+            "value" : "AddCompanyResponse(createdBy=4555290807245997227, id=476341, name=Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022, tncApproved=true, payment=false, geographies=[Geography(id=4, name=Asia, active=true, selected=true)], industries=[Industry(id=10966, name=Chemicals, active=true, approved=true)])"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544610928,
+            "stop" : 1642544611374,
+            "duration" : 446
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "29235fd84fa985f6",
+            "name" : "Request",
+            "source" : "29235fd84fa985f6.html",
+            "type" : "text/html",
+            "size" : 1353
+          }, {
+            "uid" : "b17d3624750e61f1",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "b17d3624750e61f1.html",
+            "type" : "text/html",
+            "size" : 1104
+          } ],
+          "parameters" : [ {
+            "name" : "inviteRequest",
+            "value" : "InviteRequest(firstName=Asuncion, lastName=Schaden, email=Cathern0b0f8456-0cb6-430b-99dc-b6bf04d6bc28@termgrid.com, elementType=LENDER, companyId=476341, admin=true)"
+          }, {
+            "name" : "username",
+            "value" : "santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com"
+          }, {
+            "name" : "password",
+            "value" : "test"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=7dc99db786ee32a9c15c57a5603c716332373bf1c7e1dcab1cec627698fa8ed5, emailVerified=false, elementPermissions=[])"
+        }, {
+          "name" : "addCompanyResponse",
+          "value" : "AddCompanyResponse(createdBy=4555290807245997227, id=476341, name=Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022, tncApproved=true, payment=false, geographies=[Geography(id=4, name=Asia, active=true, selected=true)], industries=[Industry(id=10966, name=Chemicals, active=true, approved=true)])"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "adminJoinLinkUrl",
+        "time" : {
+          "start" : 1642544611387,
+          "stop" : 1642544612576,
+          "duration" : 1189
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "getInvite",
+          "time" : {
+            "start" : 1642544611387,
+            "stop" : 1642544612574,
+            "duration" : 1187
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9f026f3d108f1f77",
+            "name" : "Request",
+            "source" : "9f026f3d108f1f77.html",
+            "type" : "text/html",
+            "size" : 589
+          }, {
+            "uid" : "2e5bba93ee0561",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "2e5bba93ee0561.html",
+            "type" : "text/html",
+            "size" : 120391
+          } ],
+          "parameters" : [ {
+            "name" : "username",
+            "value" : "aasim@inncretech.com"
+          }, {
+            "name" : "password",
+            "value" : "Demo12#$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "fetchJoinLinkUrl",
+          "time" : {
+            "start" : 1642544612575,
+            "stop" : 1642544612576,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "teamMemberEmail",
+            "value" : "Cathern0b0f8456-0cb6-430b-99dc-b6bf04d6bc28@termgrid.com"
+          }, {
+            "name" : "invite",
+            "value" : "[{email=admin+bofa2@gmail.com, firstName=abcd, lastName=abcd, companyId=126, title=Project Italy, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/126, companyName=Bank of America, invitedDate=2018-11-27T20:13:25.000+0000}, {email=aasim+nov27_1santanders@inncretech.com, firstName=aasim, lastName=sam, companyId=9283, title=project, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/a34fea79-81e2-436a-befd-680cb8b77877/company/9283, companyName=santanders, invitedDate=2018-11-28T19:23:51.000+0000}, {email=admin+gs@inncretech.com, firstName=Llyod, lastName=Blankfein, companyId=135, title=small tx for api testing , invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/135, companyName=Goldman Sachs, invitedDate=2019-01-08T22:23:34.000+0000}, {email=aasim+nov26_2211@inncretech.com, firstName=misaa, lastName=ila, companyId=126, title=small tx for api testing , invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/126, companyName=Bank of America, invitedDate=2019-01-08T22:25:38.000+0000}, {email=aasim+0006@inncretech.com, firstName=Aasim, lastName=Ali, companyId=65107, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7fd6e0f5-6f5c-4084-9c6d-1c3ca42370c2/company/65107, companyName=testing lender 1, invitedDate=2019-03-07T03:36:24.000+0000}, {email=christophjmartin@gmail.com, firstName=Christoph, lastName=Martin, companyId=2, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/9d5345a9-e380-4dd7-b4de-8f5c55cb3954/company/2, companyName=ThePowerGrid, invitedDate=2021-07-14T15:45:31.000+0000}, {email=karthik+grid12@inncretech.com, firstName=abcd, lastName=abcd, companyId=64110, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6dd06dc7-a668-4a86-8f46-883054fec313/company/64110, companyName=New, invitedDate=2019-04-03T17:53:47.000+0000}, {email=karthik+grid1rerew2@inncretech.com, firstName=abcd, lastName=abcd, companyId=64110, title=new transaction aasim, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/dfcc7fa2-d22b-4249-a7b4-354fc090d91e/company/64110, companyName=New, invitedDate=2019-04-03T17:54:30.000+0000}, {email=aasim+093291@inncretech.com, firstName=Aasim, lastName=Ali, companyId=68983, title=tx april 3, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/68983, companyName=njioqwerty, invitedDate=2019-04-03T21:36:36.000+0000}, {email=aasim+produser1@inncretech.com, firstName=aad, lastName=as, companyId=69156, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/9ca331b8-2052-448b-8bab-e7215d0043c4/company/69156, companyName=protest 1, invitedDate=2019-04-19T15:22:38.000+0000}, {email=aasim+april_26_3_bofa@inncretech.com, firstName=Aasim, lastName=Ali, companyId=126, title=aasim april 25 transaction, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/cb013c4b-7238-452e-a80d-3c6d8de187e5/company/126, companyName=Bank of America, invitedDate=2019-04-25T15:19:20.000+0000}, {email=aasim+april_26_5_bofa@inncretech.com, firstName=misaa, lastName=ila, companyId=126, title=aasim april 25 transaction, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6c143b35-2c5f-47ea-9554-943f7f3db156/company/126, companyName=Bank of America, invitedDate=2019-04-25T15:29:40.000+0000}, {email=vitaanster+9090909@gmail.com, firstName=Vitaan, lastName=Thapar, companyId=70044, title=Acquisition of Inncretech Tech Services, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/1b7e5b56-4fe3-497d-a675-6b92b3200b70/company/70044, companyName=new lender, invitedDate=2019-04-25T15:41:48.000+0000}, {email=vitaanster+90m90909@gmail.com, firstName=dsdas, lastName=cdc, companyId=70075, title=Acquisition of Inncretech Tech Services, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/15d92528-5059-48ee-bebe-c054c1bb592a/company/70075, companyName=new llc, invitedDate=2019-04-25T15:47:11.000+0000}, {email=aasim+nji@inncretech.com, firstName=nji, lastName=nji, companyId=70158, title=mk, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/4b549bbb-ccd5-4277-8e04-ef6d625406a3/company/70158, companyName=nji, invitedDate=2019-04-25T17:14:56.000+0000}, {email=aasim+0989@inncretech.com, firstName=aasim, lastName=ali, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/04e99e37-87e8-436a-ac78-ed9a9565da99/company/2, companyName=ThePowerGrid, invitedDate=2020-08-04T15:32:13.000+0000}, {email=aasim+409@inncretech.com, firstName=Vitaan, lastName=Thapar, companyId=71431, title=abcd, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/71431, companyName=abcd, invitedDate=2019-04-29T21:49:31.000+0000}, {email=aasim+newapril262019_08@inncretech.com, firstName=Aasim, lastName=Ali, companyId=126, title=asdfasd, invitationStatus=REJECTED, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/126, companyName=Bank of America, invitedDate=2019-04-29T22:45:01.000+0000}, {email=dipish.rai+account2@gmail.com, firstName=Dipish, lastName=Rai, companyId=77233, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/b47e3fd8-6a05-49cf-829f-3301dc19bbf5/company/77233, companyName=Account 2, invitedDate=2021-12-29T18:01:08.000+0000}, {email=srija+tg1may15m3@inncretech.com, firstName=Shravya, lastName=Nethula, companyId=77564, title=School Building, invitationStatus=REJECTED, admin=false, inviteLink=https://testing.termgrid.com/join-team/3f14b8f1-55de-4dfd-8c08-0c3b8660438e/company/77564, companyName=Inncretech2019, invitedDate=2019-05-15T20:13:00.000+0000}, {email=srija+tg1may15m3@inncretech.com, firstName=Shravya, lastName=Nethula, companyId=78091, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/3f14b8f1-55de-4dfd-8c08-0c3b8660438e/company/78091, companyName=Suma's Company TG1 May 15, invitedDate=2019-05-15T20:13:00.000+0000}, {email=aasim+nov28_d@inncretech.com, firstName=d, lastName=ali, companyId=9148, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/1ecd0e99-d5a7-4680-b18d-0d809a3d3f3b/company/9148, companyName=aasim nov28, invitedDate=2019-09-24T17:57:04.000+0000}, {email=aasim+nov22_a@inncretech.com, firstName=aasim, lastName=ali, companyId=9148, title=a, invitationStatus=REJECTED, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2019-11-20T21:56:55.000+0000}, {email=vishal+v2@inncretech.com, firstName=Vishal, lastName=V2, companyId=111807, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/85df029e-a36d-4bfa-a3a3-e6454378b931/company/111807, companyName=SpaceX, invitedDate=2020-01-26T22:49:03.000+0000}, {email=aasim+ds@inncretech.com, firstName=aj, lastName=sd, companyId=9148, title=new tx testing 20 + lenders, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/addfaf77-1a9c-4e57-a5dc-15e1be8e59ae/company/9148, companyName=aasim nov28, invitedDate=2020-05-14T13:10:12.000+0000}, {email=aasim+0a@inncretech.com, firstName=a, lastName=a, companyId=9148, title=new tx testing 20 + lenders, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/81b2a7b6-15ce-46ff-807c-309a14d2b7ab/company/9148, companyName=aasim nov28, invitedDate=2021-06-14T17:46:12.000+0000}, {email=dipish.rai+dr2@gmail.com, firstName=DR, lastName=Capital, companyId=164990, title=Test 31 Mar, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7c1dd6fb-4c8e-43d5-b095-56d97929f121/company/164990, companyName=DR Capital 2, invitedDate=2020-10-28T09:53:57.000+0000}, {email=aasim+dir2-p@inncretech.com, firstName=aasim, lastName=ali, companyId=2, title=private driectory- 2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/72de7826-3498-400f-bfa1-8d248db2ad7a/company/2, companyName=ThePowerGrid, invitedDate=2020-07-22T17:16:17.000+0000}, {email=aasim+dir4@inncretech.com, firstName=Aasim, lastName=Ali, companyId=9148, title=private directory test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2020-07-30T16:02:15.000+0000}, {email=aasim+dir4@inncretech.com, firstName=Aasim, lastName=Ali, companyId=166002, title=private directory test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/166002, companyName=Private-dir-1, invitedDate=2020-07-30T16:02:15.000+0000}, {email=aasim+dirdelete@inncretech.com, firstName=Aasim, lastName=Ali, companyId=166287, title=private directory test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/92085ae0-54e9-4bd2-b43f-979b7b54f4a9/company/166287, companyName=dir check company 2, invitedDate=2020-07-30T16:24:49.000+0000}, {email=aasim+dirdelete@inncretech.com, firstName=Aasim, lastName=Ali, companyId=166311, title=private directory test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/92085ae0-54e9-4bd2-b43f-979b7b54f4a9/company/166311, companyName=dir check company 2- correctone, invitedDate=2020-07-30T16:24:49.000+0000}, {email=aasim+dir2-p12@inncretech.com, firstName=aasim, lastName=ali, companyId=2, title=test-updates, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/818be729-7ad4-4ba0-816b-bc25f261f2ea/company/2, companyName=ThePowerGrid, invitedDate=2021-12-08T21:14:50.000+0000}, {email=aasim+0987637hf@inncretech.com, firstName=Aasim, lastName=Ali, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/5666dc6d-0a82-41e1-9b99-3272e7f89e9a/company/2, companyName=ThePowerGrid, invitedDate=2020-11-16T21:16:59.000+0000}, {email=natalie+1@peaksandpies.com, firstName=Natalie, lastName=Rauh, companyId=2, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/9473e768-2f74-4214-9328-af5a706e419f/company/2, companyName=ThePowerGrid, invitedDate=2021-07-14T15:45:19.000+0000}, {email=thomas+2@inncretech.com, firstName=tom, lastName=hanna, companyId=2, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/4a47b7b8-23a0-41ed-a189-51464f1a1178/company/2, companyName=ThePowerGrid, invitedDate=2021-12-09T16:42:50.000+0000}, {email=thomas+2@inncretech.com, firstName=tom, lastName=hanna, companyId=235320, title=tx - nov 20, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/4a47b7b8-23a0-41ed-a189-51464f1a1178/company/235320, companyName=tom, invitedDate=2021-12-09T16:42:50.000+0000}, {email=thomas+4@inncretech.com, firstName=T3, lastName=Hanna, companyId=2, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/d4c18a4f-e62b-406c-b935-7cf5b657d2c4/company/2, companyName=ThePowerGrid, invitedDate=2022-01-12T15:39:37.000+0000}, {email=thomas+4@inncretech.com, firstName=T3, lastName=Hanna, companyId=235320, title=tx - nov 20, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/d4c18a4f-e62b-406c-b935-7cf5b657d2c4/company/235320, companyName=tom, invitedDate=2022-01-12T15:39:37.000+0000}, {email=aasim+asdfrlj@inncretech.com, firstName=Aasim, lastName=Ali, companyId=2, title=aasim, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/8c77b492-1006-42fd-b78d-a4fdcefabbae/company/2, companyName=ThePowerGrid, invitedDate=2021-05-10T17:35:04.000+0000}, {email=marlene.weber.uk@gmail.com, firstName=Marlene, lastName=Weber, companyId=2, title=Project Test 8, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/44e14de7-b5a4-454b-aad3-80e260fba1ef/company/2, companyName=ThePowerGrid, invitedDate=2021-07-14T15:45:15.000+0000}, {email=marlene.weber.uk@gmail.com, firstName=Marlene, lastName=Weber, companyId=164959, title=Project Test 8, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/44e14de7-b5a4-454b-aad3-80e260fba1ef/company/164959, companyName=DR Capital, invitedDate=2021-07-14T15:45:15.000+0000}, {email=thomas+thomas@inncretech.com, firstName=thomas, lastName=hanna, companyId=347258, title=project 01/27, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/347258, companyName=TomHanna&Co, invitedDate=2021-06-15T15:22:33.000+0000}, {email=jsteinhardt@klsdiversified.com, firstName=John, lastName=Steinhardt, companyId=2, title=Project Intranet, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/9194e5c3-dba0-4997-8e4e-bde03ed907ca/company/2, companyName=ThePowerGrid, invitedDate=2021-07-14T15:45:23.000+0000}, {email=aasim+wdcda@inncretech.com, firstName=Shanu, lastName=ali, companyId=9148, title=termsheet- 12, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/4b7d233d-6687-4310-bc2e-2e3222f73c89/company/9148, companyName=aasim nov28, invitedDate=2021-06-29T17:41:06.000+0000}, {email=trijala@inncretech.com, firstName=trijala, lastName=trijala, companyId=2, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/eb65f2b1-b4d6-4ae0-8675-1e2603356dcd/company/2, companyName=ThePowerGrid, invitedDate=2021-12-09T17:07:33.000+0000}, {email=ciaran@glenwoodconsult.co.uk, firstName=Ciaran, lastName=Flynn, companyId=2, title=Project Bravo, invitationStatus=REMOVED, admin=false, inviteLink=https://testing.termgrid.com/join-team/f80b1718-88fc-4110-9d49-fad52962b4df/company/2, companyName=ThePowerGrid, invitedDate=2021-10-27T07:33:17.000+0000}, {email=thomas+99@inncretech.com, firstName=t2, lastName=hanna, companyId=268285, title=Communication Test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/268285, companyName=tom feb2021, invitedDate=2021-09-08T17:46:44.000+0000}, {email=adidixit@ucla.edu, firstName=Aditya, lastName=Dixit, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/99c76484-0783-44fc-8ade-947067868943/company/2, companyName=ThePowerGrid, invitedDate=2021-09-14T19:54:56.000+0000}, {email=karthik.2211@yahoo.com, firstName=Karthik, lastName=Keertipati, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/cd50f670-a3e1-4bf6-9557-7faf133801b1/company/2, companyName=ThePowerGrid, invitedDate=2021-12-08T21:15:31.000+0000}, {email=karthik.2211@yahoo.com, firstName=Karthik, lastName=Keertipati, companyId=9148, title=companay to buy, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/cd50f670-a3e1-4bf6-9557-7faf133801b1/company/9148, companyName=aasim nov28, invitedDate=2021-12-08T21:15:31.000+0000}, {email=vishal+hsbc@termgrid.com, firstName=Vishakl, lastName=HSBC, companyId=409755, title=Linkedin, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/409755, companyName=HSBC India, invitedDate=2021-09-27T21:29:47.000+0000}, {email=katherine@termgrid.com, firstName=Katherine, lastName=Ireland, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/0454d31e-19c8-4a38-8c5e-2307c6f7e24c/company/2, companyName=ThePowerGrid, invitedDate=2021-10-13T11:11:11.000+0000}, {email=alexander+dealteam@inncretech.com, firstName=AJ, lastName=K, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f424bbfa-8ebf-4161-9c21-430d8d140419/company/2, companyName=ThePowerGrid, invitedDate=2021-10-26T15:40:10.000+0000}, {email=thomas+dealteam@inncretech.com, firstName=Tom, lastName=Hanna, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/d3814a7a-d243-4b52-bd77-560d29256b2d/company/2, companyName=ThePowerGrid, invitedDate=2022-01-05T16:18:03.000+0000}, {email=thomas+49@inncretech.com, firstName=T3, lastName=Hanna, companyId=235320, title=Testing Allocation, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/235320, companyName=tom, invitedDate=2022-01-14T21:50:36.000+0000}, {email=Karthik.gali@gmail.com, firstName=Karthik, lastName=Gali, companyId=2, title=Termsheet Test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e2e87975-1d55-48b0-8251-da2c5ab3e5a2/company/2, companyName=ThePowerGrid, invitedDate=2021-11-17T15:54:43.000+0000}, {email=adi@termgrid.com, firstName=Aditya, lastName=Dixit, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e876fc9f-7032-4f65-afa4-6c83a53dd1a4/company/2, companyName=ThePowerGrid, invitedDate=2021-11-30T22:16:21.000+0000}, {email=adi+ares@termgrid.com, firstName=John, lastName=Doe, companyId=417482, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-11-30T22:27:15.000+0000}, {email=adi+wilshere@termgrid.com, firstName=Jack, lastName=Wilshere, companyId=417482, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/3b90cb86-861a-44cc-a868-5b5fa5859645/company/417482, companyName=Ares, invitedDate=2021-12-01T15:48:50.000+0000}, {email=adi+owl@termgrid.com, firstName=Mikel, lastName=Arteta, companyId=417484, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/b2c4b8d4-55cb-4fd4-b554-b1fff26da5da/company/417484, companyName=Blue Owl, invitedDate=2021-12-01T15:50:22.000+0000}, {email=adi+suisse@termgrid.com, firstName=Johan, lastName=Cabaye, companyId=417490, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6bba4d33-d4f5-4cb7-8e87-95f0adbca0c7/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T15:50:46.000+0000}, {email=adi+db@termgrid.com, firstName=Bernt, lastName=Leno, companyId=417488, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/59e07525-24e7-451f-ac7f-e4a39c1d66b8/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T15:51:06.000+0000}, {email=adi+golub@termgrid.com, firstName=Emanuel, lastName=Adebayor, companyId=417486, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/bcb15991-63f2-4a33-a78a-99f57103d2f6/company/417486, companyName=Golub, invitedDate=2021-12-01T15:51:32.000+0000}, {email=adi+gso@termgrid.com, firstName=Vivianne, lastName=Miedema, companyId=417494, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/010a9124-644a-4d9d-9280-0eece87a883c/company/417494, companyName=GSO, invitedDate=2021-12-01T15:51:55.000+0000}, {email=adi+kkr@termgrid.com, firstName=Anisha, lastName=Sharma, companyId=417492, title=Project Alpha, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/78db5ce4-1ccd-417e-b9ce-4de479dbfcf1/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T15:52:17.000+0000}, {email=adi+lampard@termgrid.com, firstName=Frank, lastName=Lampard, companyId=417482, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/cb1dc433-4ae8-40ba-9088-21fee8e2147d/company/417482, companyName=Ares, invitedDate=2021-12-01T15:52:37.000+0000}, {email=adi+terry@termgrid.com, firstName=John, lastName=Terry, companyId=417490, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e0f7f42f-da7a-48f0-8970-26a67066e6a2/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T15:52:56.000+0000}, {email=adi+ballack@termgrid.com, firstName=Michael, lastName=Ballack, companyId=417488, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/9fa959bf-7a02-4ae2-a172-781f2d4c921a/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T15:48:00.000+0000}, {email=adi+cech@termgrid.com, firstName=Petr, lastName=Cech, companyId=417488, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/9188f92d-6e9b-43d8-b41a-a388ae63b722/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T15:53:34.000+0000}, {email=adi+cole@gmail.com, firstName=Ashley, lastName=Cole, companyId=164959, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/04e9b37d-e413-42f3-b956-7bd61cd09d1f/company/164959, companyName=DR Capital, invitedDate=2021-12-01T15:53:56.000+0000}, {email=adi+harder@termgrid.com, firstName=Pernille, lastName=Harder, companyId=164990, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6e7625ff-d414-40b5-b5ad-8a5219f62483/company/164990, companyName=DR Capital 2, invitedDate=2021-12-01T15:54:17.000+0000}, {email=adi+kerr@termgrid.com, firstName=Samantha, lastName=Kerr, companyId=417492, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/27de0d13-cf92-4d72-ab09-aff73d9a45e2/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T15:54:36.000+0000}, {email=adi+flemming@termgrid.com, firstName=Jessie, lastName=Flemming, companyId=63993, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/ac95d17f-f9be-489c-beb3-913b5c98812a/company/63993, companyName=TD_Bank, invitedDate=2021-12-01T15:54:59.000+0000}, {email=adi+flemming@termgrid.com, firstName=Jessie, lastName=Flemming, companyId=417488, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/ac95d17f-f9be-489c-beb3-913b5c98812a/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T15:54:59.000+0000}, {email=adi+j5jump@termgrid.com, firstName=Jorginho, lastName=Frello, companyId=64885, title=Project Baghdad, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/d6680d17-6ea4-4cc7-99c0-6ef69f394c4e/company/64885, companyName=Very New Bank, invitedDate=2021-12-01T15:55:19.000+0000}, {email=adi+reus@termgrid.com, firstName=Marco, lastName=Reus, companyId=417482, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e216efd6-ac51-4bf5-9576-70af6a6a2b54/company/417482, companyName=Ares, invitedDate=2021-12-01T15:55:40.000+0000}, {email=adi+gotze@termgrid.com, firstName=Mario, lastName=Gotze, companyId=417484, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/127d2a40-0673-407c-af5c-9571faf49199/company/417484, companyName=Blue Owl, invitedDate=2021-12-01T15:56:04.000+0000}, {email=adi+ilkay@termgrid.com, firstName=Ilkay, lastName=Gundagon, companyId=417490, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/91661737-c5ab-4c82-9223-f5bc8e7c8c05/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T15:56:29.000+0000}, {email=adi+kirby@termgrid.com, firstName=Fran, lastName=Kirby, companyId=417490, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/8c6b4ac9-5090-44eb-ac77-766dc0f1c7b6/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T15:56:49.000+0000}, {email=adi+erikson@termgrid.com, firstName=Magdalena, lastName=Erikson, companyId=417486, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/3942770b-f848-44c4-9a23-cad5a79c4d0a/company/417486, companyName=Golub, invitedDate=2021-12-01T16:00:28.000+0000}, {email=adi+ederson@termgrid.com, firstName=Ederson, lastName=Morales, companyId=417494, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/40f3ee4e-7e95-4d1e-9d52-85ce87653434/company/417494, companyName=GSO, invitedDate=2021-12-01T16:00:17.000+0000}, {email=adi+chase@termgrid.com, firstName=Chase, lastName=Chandler, companyId=409334, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/397da763-8640-4909-9a30-d3b5388a362b/company/409334, companyName=Kanopy, invitedDate=2021-12-01T16:00:05.000+0000}, {email=adi+marco@termgrid.com, firstName=Marco, lastName=Van Basten, companyId=417492, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/2607b10c-e0d1-4267-8b2f-20d6f111b3eb/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T15:59:52.000+0000}, {email=adi+nguyen@termgrid.com, firstName=Francine, lastName=Nguyen, companyId=111861, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f74f9f0c-1ddc-4182-8e40-cf9620cee645/company/111861, companyName=State Bank, invitedDate=2021-12-01T15:59:41.000+0000}, {email=adi+td@termgrid.com, firstName=Tom, lastName=Davis, companyId=63993, title=Project Charlie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/1ded6346-aac5-49ab-b524-579162ff7854/company/63993, companyName=TD_Bank, invitedDate=2021-12-01T15:59:30.000+0000}, {email=adi+jacob@termgrid.com, firstName=Jacob, lastName=Murphy, companyId=417490, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/1585cea6-03b2-4f69-a39d-904a1498bcc0/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T15:59:19.000+0000}, {email=adi+rossi@termgrid.com, firstName=Valerie, lastName=Rossi, companyId=417488, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/24ba99ac-1fb3-499d-92a6-b88746c4879c/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T15:59:07.000+0000}, {email=adi+eric@termgrid.com, firstName=Eric, lastName=Henline, companyId=164959, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7726e1c6-af1b-404a-95ac-be9c9af8de6b/company/164959, companyName=DR Capital, invitedDate=2021-12-01T15:58:56.000+0000}, {email=adi+jill@termgrid.com, firstName=Jill, lastName=Frank, companyId=417206, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e2cc4ecf-6a0c-47f9-a805-a0648a026b8d/company/417206, companyName=HSBC UK, invitedDate=2021-12-01T15:58:45.000+0000}, {email=adi+walters@termgrid.com, firstName=Andy, lastName=Walters, companyId=417492, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/a65d23e2-8def-4b39-b999-e72835493ad4/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T15:58:34.000+0000}, {email=adi+alice@termgrid.com, firstName=Alice, lastName=Constantine, companyId=111861, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6663f84b-1330-4bf4-8e15-470511ceac17/company/111861, companyName=State Bank, invitedDate=2021-12-01T15:58:22.000+0000}, {email=adi+derek@termgrid.com, firstName=Derek, lastName=O'Brien, companyId=63993, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/63993, companyName=TD_Bank, invitedDate=2021-12-01T05:23:53.000+0000}, {email=adi+wong@termgrid.com, firstName=Valeska, lastName=Wong, companyId=64885, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/64885, companyName=Very New Bank, invitedDate=2021-12-01T05:24:10.000+0000}, {email=adi+johnson@termgrid.com, firstName=Johnson, lastName=Ademola, companyId=417206, title=Project Delta, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417206, companyName=HSBC UK, invitedDate=2021-12-01T05:24:30.000+0000}, {email=adi+clark@termgrid.com, firstName=Ariel, lastName=Clark, companyId=417482, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-12-01T05:32:09.000+0000}, {email=adi+leeds@termgrid.com, firstName=Ashton, lastName=Leeds, companyId=417484, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417484, companyName=Blue Owl, invitedDate=2021-12-01T05:32:29.000+0000}, {email=adi+nova@termgrid.com, firstName=Anthony, lastName=Nova, companyId=164959, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/164959, companyName=DR Capital, invitedDate=2021-12-01T05:32:44.000+0000}, {email=adi+jade@termgrid.com, firstName=Jade, lastName=Billings, companyId=398682, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/398682, companyName=Jade Lender1, invitedDate=2021-12-01T05:33:05.000+0000}, {email=adi+jade@termgrid.com, firstName=Jade, lastName=Billings, companyId=417490, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T05:33:05.000+0000}, {email=adi+liza@termgrid.com, firstName=Liza, lastName=Koulikova, companyId=417492, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T05:33:21.000+0000}, {email=adi+annie@termgrid.com, firstName=Annie, lastName=Arlington, companyId=111861, title=Project Echo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/111861, companyName=State Bank, invitedDate=2021-12-01T05:33:37.000+0000}, {email=adi+arvind@termgrid.com, firstName=Arvind, lastName=Sharma, companyId=164990, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/164990, companyName=DR Capital 2, invitedDate=2021-12-01T05:40:19.000+0000}, {email=adi+wells@termgrid.com, firstName=Simon, lastName=Wells, companyId=417486, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417486, companyName=Golub, invitedDate=2021-12-01T05:40:37.000+0000}, {email=adi+emi@termgrid.com, firstName=Emi, lastName=Smith, companyId=417206, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417206, companyName=HSBC UK, invitedDate=2021-12-01T05:40:50.000+0000}, {email=adi+isha@termgrid.com, firstName=Isha, lastName=Joseph, companyId=398682, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/398682, companyName=Jade Lender1, invitedDate=2021-12-01T05:41:55.000+0000}, {email=adi+josslyn@termgrid.com, firstName=Josslyn, lastName=Flores, companyId=409334, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/409334, companyName=Kanopy, invitedDate=2021-12-01T05:42:17.000+0000}, {email=adi+ana@termgrid.com, firstName=Ana, lastName=Vivas, companyId=417492, title=Project Foxtrot, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T05:42:30.000+0000}, {email=adi+ab@termgrid.com, firstName=Abraham, lastName=Benjamin, companyId=417482, title=Project Golf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-12-01T05:47:57.000+0000}, {email=adi+raj@termgrid.com, firstName=Rajesh, lastName=Patel, companyId=417484, title=Project Golf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417484, companyName=Blue Owl, invitedDate=2021-12-01T05:48:11.000+0000}, {email=adi+sol@termgrid.com, firstName=Sol, lastName=Lopez, companyId=417490, title=Project Golf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T05:48:29.000+0000}, {email=adi+kay@termgrid.com, firstName=Kay, lastName=Murray, companyId=417488, title=Project Golf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T05:48:47.000+0000}, {email=adi+adhil@termgrid.com, firstName=Adhil, lastName=Gafoor, companyId=409755, title=Project Golf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/409755, companyName=HSBC India, invitedDate=2021-12-01T05:49:19.000+0000}, {email=adi+cr7@termgrid.com, firstName=Cristiano, lastName=Ronaldo, companyId=409383, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/409383, companyName=Adi Test Lender, invitedDate=2021-12-01T05:55:53.000+0000}, {email=adi+bruno@termgrid.com, firstName=Bruno, lastName=Fernandez, companyId=64819, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/64819, companyName=Bofa bank testing, invitedDate=2021-12-01T05:56:05.000+0000}, {email=adi+messi@termgrid.com, firstName=Antonia, lastName=Messi, companyId=417488, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T05:56:28.000+0000}, {email=adi+val@termgrid.com, firstName=Valerie, lastName=Van Horn, companyId=164990, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/164990, companyName=DR Capital 2, invitedDate=2021-12-01T05:56:44.000+0000}, {email=adi+lieke@termgrid.com, firstName=Lieke, lastName=Martens, companyId=417486, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417486, companyName=Golub, invitedDate=2021-12-01T05:56:59.000+0000}, {email=adi+ally@termgrid.com, firstName=Ally, lastName=Conway, companyId=417492, title=Project Hotel, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417492, companyName=KKR Credit, invitedDate=2021-12-01T05:57:16.000+0000}, {email=adi.dxt@gmail.com, firstName=Dean, lastName=Smith, companyId=417482, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-12-01T06:07:13.000+0000}, {email=adi+aiden@termgrid.com, firstName=Aiden, lastName=Markaram, companyId=417484, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417484, companyName=Blue Owl, invitedDate=2021-12-01T06:08:13.000+0000}, {email=adi+lane@termgrid.com, firstName=Lois, lastName=Lane, companyId=417490, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417490, companyName=Credit Suisse, invitedDate=2021-12-01T06:08:24.000+0000}, {email=adi+alison@termgrid.com, firstName=Alison, lastName=Plea, companyId=417488, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417488, companyName=Deutsche Bank, invitedDate=2021-12-01T06:08:38.000+0000}, {email=adi+vk@termgrid.com, firstName=Virat, lastName=Kohli, companyId=417486, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417486, companyName=Golub, invitedDate=2021-12-01T06:08:53.000+0000}, {email=adi+steven@termgrid.com, firstName=Steven, lastName=Pastor, companyId=417482, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-12-02T04:58:42.000+0000}, {email=adi+smith@termgrid.com, firstName=Dean, lastName=Smith, companyId=417482, title=Project India, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/417482, companyName=Ares, invitedDate=2021-12-02T05:01:47.000+0000}, {email=dora.sandeep1@gmail.com, firstName=test, lastName=last, companyId=9148, title=test, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2021-12-11T02:52:22.000+0000}, {email=dora.sandeep+2@gmail.com, firstName=sandeep1234, lastName=12345, companyId=9148, title=NEW WWWWWW San test111, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2021-12-11T02:54:26.000+0000}, {email=aasim+sbi12@inncretech.com, firstName=aasim, lastName=ali, companyId=420383, title=project test demo, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/420383, companyName=SBI, invitedDate=2021-12-08T19:28:22.000+0000}, {email=123@123.com, firstName=123, lastName=123, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/4267e3db-4264-40c8-86fb-6dcc21241fbd/company/2, companyName=ThePowerGrid, invitedDate=2021-12-08T21:24:06.000+0000}, {email=123@gmai.com, firstName=123, lastName=123, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/3171da53-cdaf-4b73-89dc-c5c28bf2d151/company/2, companyName=ThePowerGrid, invitedDate=2021-12-09T18:09:56.000+0000}, {email=santosh.baby+2@gmail.com, firstName=santhosh1, lastName=santhosh1, companyId=9148, title=NEW WWWWWW San test111, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2021-12-11T03:06:10.000+0000}, {email=shvia@inncretech.com, firstName=Ashvi, lastName=Patel, companyId=426361, title=Test 1, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/426361, companyName=Ashvi Patel, invitedDate=2021-12-12T22:23:14.000+0000}, {email=ashvi+12@inncretech.com, firstName=Ashvi, lastName=Patel, companyId=426361, title=Test 1, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/426361, companyName=Ashvi Patel, invitedDate=2021-12-12T22:26:28.000+0000}, {email=karthik@inncretech.com, firstName=Karthik, lastName=Keertipati, companyId=426361, title=P 1, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/127cac4e-d5ff-46c2-823c-378241042a32/company/426361, companyName=Ashvi Patel, invitedDate=2022-01-13T22:21:10.000+0000}, {email=aasim+34abc3221qac@inncretech.com, firstName=aasim, lastName=ali, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/9dd6ceba-8baa-4c05-b832-dc6c7c09020b/company/2, companyName=ThePowerGrid, invitedDate=2022-01-05T18:16:55.000+0000}, {email=thesa@gmail.com, firstName=tee, lastName=gg, companyId=451228, title=TranName69046, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/451228, companyName=Lender77244, invitedDate=2022-01-09T18:51:45.000+0000}, {email=ppan@email.test, firstName=Peter, lastName=Pan, companyId=451347, title=gsfgdf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/451347, companyName=051, invitedDate=2022-01-10T10:18:55.000+0000}, {email=fabrice@peaksandpies.com, firstName=lu, lastName=tran, companyId=71386, title=gsfgdf, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/71386, companyName=007, invitedDate=2022-01-10T11:22:30.000+0000}, {email=aasim+jan10-2@inncretech.com, firstName=aasim, lastName=ali, companyId=452766, title=New tx jan 10, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/9c264466-4c0c-40f4-84f1-4e286c1a522b/company/452766, companyName=company-jan10-2, invitedDate=2022-01-10T20:25:59.000+0000}, {email=santosh+fcb7e662-81b4-435c-8442-c09aed1d32981641908185659@termgrid.com, firstName=kip.morar d6f65986-fe5d-4355-95b7-0fdccccca7f1yqFa#7#&&# ##74Z#.x1 &&+8+y4NQ9f#8XC+&C _v_W&/_ &+, lastName=Padberg, companyId=453005, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/453005, companyName=Automation111, invitedDate=2022-01-11T13:48:48.000+0000}, {email=santosh+b7e662-81b4-435c-8442-c09aed1d32981641908185659@termgrid.com, firstName=Santosh, lastName=baby, companyId=453005, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/db3c7f4a-0d35-4576-a320-b6d115de349c/company/453005, companyName=Automation111, invitedDate=2022-01-11T13:58:39.000+0000}, {email=santosh+81b4-435c-8442-c09aed1d32981641908185659@termgrid.com, firstName=Santosh, lastName=baby, companyId=453005, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/37d6d1bf-0a03-414d-9bb5-a2035565335f/company/453005, companyName=Automation111, invitedDate=2022-01-11T14:04:45.000+0000}, {email=aasim+ali121n@gmail.com, firstName=aasim, lastName=ali, companyId=443221, title=tx-112, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/443221, companyName=aasim+ali1n company, invitedDate=2022-01-11T16:17:17.000+0000}, {email=Ronnyece6907b-8fef-4200-9e14-bb2baf5dff5d@termgrid.com, firstName=Janene, lastName=Dickinson, companyId=459840, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/dd014dd1-888b-4d80-8068-8b685f0f2b99/company/459840, companyName=Agent Phoenix of Heartse988eaf6-9402-4cdd-88b6-6919d7fa544a, invitedDate=2022-01-12T14:22:12.000+0000}, {email=Dalenec4fc9c14-2e29-40b1-a52f-239cdb28cfa8@termgrid.com, firstName=Clay, lastName=Pouros, companyId=459851, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f6d36625-eea2-4978-9ac9-8ed976f46892/company/459851, companyName=Green Anta1568d2c-fdfd-4871-95a2-76bd3d6cc5a1, invitedDate=2022-01-12T14:25:04.000+0000}, {email=Bridget4d54fcbb-0922-4f8e-8793-b0a9e1e54945@termgrid.com, firstName=Judith, lastName=Hessel, companyId=459862, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7624c691-4467-44ba-9f64-3743601fef0b/company/459862, companyName=Cyborg Curse Woman4dadb750-00ba-4262-9d43-dbdcea855cc3, invitedDate=2022-01-12T14:33:54.000+0000}, {email=Carmina5231df6c-7c48-4e0c-9fd6-5643e31cb935@termgrid.com, firstName=Marco, lastName=Turcotte, companyId=459873, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/2bde503d-3017-4cee-97c3-50dfb5f0bbd8/company/459873, companyName=Cyborg Niki Sanders510028c6-57cd-4672-ade3-b6fc690835fb, invitedDate=2022-01-12T14:37:14.000+0000}, {email=Suk4e1b60ee-f617-494f-a878-713631d792ec@termgrid.com, firstName=Carolann, lastName=Metz, companyId=459884, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/62108d7c-8f43-4024-828f-fb641d8bee95/company/459884, companyName=Havokd3744cb2-f3bb-4b90-94f4-0eb16881066d, invitedDate=2022-01-12T14:42:58.000+0000}, {email=Olga3ca8c8da-f4d0-4ee2-9331-082ae63ef248@termgrid.com, firstName=Elenore, lastName=Kling, companyId=459895, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/df3b2462-b7b7-45d0-b6ab-362fc695b666/company/459895, companyName=Cyborg Shatterstara4fdad0a-592d-46b1-8121-e03b8887135b, invitedDate=2022-01-12T14:46:01.000+0000}, {email=santosh.baby777@gmail.com, firstName=Santosh, lastName=baby, companyId=459909, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f6444cb5-8bee-4cad-b674-00fcabd1c314/company/459909, companyName=Automation166, invitedDate=2022-01-12T14:50:06.000+0000}, {email=Lorenzoa136931f-fa28-4c8d-8c5f-a7f9063184b9@termgrid.com, firstName=Melodi, lastName=Marquardt, companyId=459920, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/8ff05450-6ec3-4d23-85e0-6ae4df8023f0/company/459920, companyName=Star-Lord Wolf0be293bc-2c6f-44fa-9d6b-d28bb8861cf5, invitedDate=2022-01-12T14:59:51.000+0000}, {email=Luis8398a84f-b3b8-420b-8543-c01389ab5554@termgrid.com, firstName=Fernando, lastName=Pollich, companyId=459932, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/5eaae0d2-98c4-4e49-ae2e-e472292b8ddb/company/459932, companyName=Ronincbd444bb-84b2-4b91-9008-9d76c5bd99cd, invitedDate=2022-01-12T15:02:05.000+0000}, {email=Harrisbb29edba-5e85-4358-b60b-1b59de60d908@termgrid.com, firstName=Zulema, lastName=Goodwin, companyId=459944, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/32b45ab0-8d08-448c-b6af-aa162ea640d8/company/459944, companyName=Songbird4c6582fe-4eda-459d-9c34-384a3c3e31d0, invitedDate=2022-01-12T15:03:27.000+0000}, {email=Willy44ad85e6-1720-42f9-985f-012ae31c1dc7@termgrid.com, firstName=Norberto, lastName=Schowalter, companyId=459955, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/0706fadc-b785-43df-907f-3a689b4d0fd7/company/459955, companyName=Illustrious Bushidob825ec4b-5ef8-4ddf-ab8c-bc0d268bd8a0, invitedDate=2022-01-12T15:06:35.000+0000}, {email=Arone907e50f-cdf1-4089-9c8e-3a94b5f79a6d@termgrid.com, firstName=Lawanna, lastName=Heaney, companyId=459966, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f724154a-a16e-4546-af1c-8be8299e0645/company/459966, companyName=Illustrious Metamorpho Ivy79c2ffd5-8728-4ad8-a847-992040cbcb4a, invitedDate=2022-01-12T15:08:03.000+0000}, {email=Kathifa2e4c5b-f7ba-43f8-aec0-38f4e4404c7b@termgrid.com, firstName=Mara, lastName=Lakin, companyId=459977, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/a912daf7-14d5-42db-bfa5-628eadcbec17/company/459977, companyName=Animal Boyd0f5aba6-ce93-40d4-98d2-48a0f6664ae8, invitedDate=2022-01-12T15:09:28.000+0000}, {email=Vern852a3ded-5955-46e6-8188-40ac7421ffb7@termgrid.com, firstName=Pablo, lastName=Mitchell, companyId=459988, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/ec2a2ced-4da2-437c-8f59-ab18b8e925df/company/459988, companyName=Moonstone XI0ede7dcb-5621-43ac-8294-2d120a41af89, invitedDate=2022-01-12T15:10:35.000+0000}, {email=Sharilync167caac-a886-41f3-b6df-cb660363a259@termgrid.com, firstName=Alexa, lastName=Hoeger, companyId=460000, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/d23e358b-5062-4425-8d7d-8284a567ca58/company/460000, companyName=Heat Wave3d5e223c-2032-43e2-b300-9b9e0456e3f6, invitedDate=2022-01-12T15:15:27.000+0000}, {email=Micheal2ed5165b-4f5a-4ed7-8dd0-1528ebdf42ba@termgrid.com, firstName=Tonette, lastName=Douglas, companyId=460011, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/83592054-c7c5-4a21-ba1a-9764f630b1e8/company/460011, companyName=Ronin Skull7e0ea3d2-bc4d-4de4-a506-245eb603c5cd, invitedDate=2022-01-12T15:19:59.000+0000}, {email=Sang3f5f7d56-b761-459b-bb63-4691c3da4af4@termgrid.com, firstName=Hilton, lastName=Bashirian, companyId=460022, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/c15e5b8c-3447-4308-a97a-b10609c3c3c8/company/460022, companyName=Cyclops Strike72882d55-5d3b-44e9-b505-349a3d017b5a, invitedDate=2022-01-12T15:25:12.000+0000}, {email=Somer09d3812c-aeaf-494b-a125-0dc1f1b81898@termgrid.com, firstName=Moses, lastName=Wolff, companyId=460033, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7d88aa82-6c97-4ca1-90c7-c3d379d22e65/company/460033, companyName=Captain Blob18372307-2abf-4154-8677-c6c7f64f6632, invitedDate=2022-01-12T15:27:03.000+0000}, {email=Eusebio4b71f16f-d6aa-4ac2-9c0c-cff9c123d16d@termgrid.com, firstName=Lonna, lastName=Beer, companyId=460044, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/fc61a6e0-237f-4ede-b847-b4e16b9ffa20/company/460044, companyName=The Ronin7265f459-7002-4966-a65c-be29a391dfb0, invitedDate=2022-01-12T15:29:32.000+0000}, {email=Sheila756dd589-1098-4da5-b4bc-2af04782abb4@termgrid.com, firstName=Aline, lastName=Torphy, companyId=460055, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/372ea2a0-7f6d-471e-9113-46258b7bcab8/company/460055, companyName=Cable90586223-64f3-40c5-8186-fb2c07188eba, invitedDate=2022-01-12T15:32:36.000+0000}, {email=Alejandro876c45f6-12ee-43fc-958d-0cdb32d29445@termgrid.com, firstName=Edgar, lastName=Frami, companyId=460069, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/2704c033-81bf-4fa5-ac58-181d32d73527/company/460069, companyName=The Longshot the Fatedd2d58566-b749-4497-a6a7-7af90f8efd49, invitedDate=2022-01-12T15:40:40.000+0000}, {email=Gonzalof20e624d-5e08-44cf-b0d1-899562ff2078@termgrid.com, firstName=Val, lastName=Cruickshank, companyId=460084, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/6ed3b203-9d35-473c-bfb5-ca61f3821865/company/460084, companyName=Magnificent Colin Wagnerb6f5b875-6ab1-46e5-8ba9-6644081ff038, invitedDate=2022-01-12T15:46:56.000+0000}, {email=Marcusaf38ac50-0746-4f6c-9476-258140f573b2@termgrid.com, firstName=Avelina, lastName=Borer, companyId=460096, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/2e497172-f2be-49ee-bace-cf66e5a9efa9/company/460096, companyName=Doctor Omega Red III38cd6a0d-d638-45f1-bf19-58363a0bb27f, invitedDate=2022-01-12T15:49:38.000+0000}, {email=Demetria487ba406-c943-4add-9dfa-823689542f32@termgrid.com, firstName=Jude, lastName=Kilback, companyId=460107, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/82c1307c-9222-424c-939c-4020b709a013/company/460107, companyName=The Martian Manhunter Xa7ae9642-9d3e-4348-812e-aa34067bd862, invitedDate=2022-01-12T15:50:45.000+0000}, {email=Kina7e02276c-2c48-4120-b9ad-163a1516f8fc@termgrid.com, firstName=Bernita, lastName=Bruen, companyId=460162, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/cc0286b9-4d35-41c6-8957-f45b852bbc0c/company/460162, companyName=Giant Beast3879006c-cbb4-4723-91f8-6bd6141a268d, invitedDate=2022-01-12T16:00:33.000+0000}, {email=Reyes200cc968-8ed4-47c8-a000-cc85111499ac@termgrid.com, firstName=Murray, lastName=Gutkowski, companyId=460174, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/f225c905-b6fc-4199-a52e-8f4c75450d76/company/460174, companyName=Gamora8ccf99f9-6d62-4703-8f92-f2f42e98d2e4, invitedDate=2022-01-12T16:24:26.000+0000}, {email=Porfirio341df6d7-9efb-49af-b7f8-d6a111708938@termgrid.com, firstName=Walton, lastName=Wiza, companyId=460207, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/437d01c8-4eb5-4572-8faa-26db4e8c5048/company/460207, companyName=Ultra Azraeldd134a9b-7f89-4ec5-984b-7fb695bb23f3, invitedDate=2022-01-12T17:18:11.000+0000}, {email=Dillonfe604077-7ef6-4e39-a43a-80c558548b22@termgrid.com, firstName=Drema, lastName=Jones, companyId=460218, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/263febe4-75bd-4b11-887a-c661a83808fe/company/460218, companyName=Cyborg Shrinking Violet Spirit81a25fe0-fabd-492e-b609-5946d9efc59e, invitedDate=2022-01-12T17:25:03.000+0000}, {email=sandeep@termgrid.com, firstName=abc, lastName=xyz, companyId=9148, title=Russell, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2022-01-13T09:08:18.000+0000}, {email=sandeep@termgrid.com, firstName=abc, lastName=xyz, companyId=69156, title=Russell, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/69156, companyName=protest 1, invitedDate=2022-01-13T09:08:18.000+0000}, {email=sandeep@termgrid.com, firstName=abc, lastName=xyz, companyId=71386, title=test222, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/71386, companyName=007, invitedDate=2022-01-13T09:08:18.000+0000}, {email=Lacie436ae2f7-7e4a-49b1-a0ca-62154ee682ae@termgrid.com, firstName=Kaitlin, lastName=Harris, companyId=466530, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/16b96867-b26c-4b61-9abb-2d60134b77fa/company/466530, companyName=Wolverine II0c3dc431-7eb2-48c8-9406-92906ebf3c31, invitedDate=2022-01-14T12:41:55.000+0000}, {email=Roselee1282086c-1584-4d9b-8a70-a88b61a8acf7@termgrid.com, firstName=Holley, lastName=Schmidt, companyId=466541, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/93eaa494-1f8c-4cae-838c-382e57f00c25/company/466541, companyName=Ultra Alien Woman2007a9c5-45a6-4f36-a38b-e6042d928cfe, invitedDate=2022-01-14T12:45:02.000+0000}, {email=Rochel76396c9b-3bbc-4496-8737-09a00b0933bb@termgrid.com, firstName=Lura, lastName=Hagenes, companyId=466552, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/0c1b00ba-eb47-4643-bd65-9666a48b20c9/company/466552, companyName=Lizard5d76c66e-b3a1-4e20-a776-9851af9057ed, invitedDate=2022-01-14T12:52:39.000+0000}, {email=thomas+admin@inncretech.com, firstName=Tom, lastName=Admin, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/be569c18-4976-4211-ab06-2b7c2eae0b5b/company/2, companyName=ThePowerGrid, invitedDate=2022-01-14T21:12:24.000+0000}, {email=thomas+tma@inncretech.com, firstName=TMA, lastName=Thomas, companyId=2, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/3ca591d2-6f9a-45ed-aaa6-6e2206f6356d/company/2, companyName=ThePowerGrid, invitedDate=2022-01-14T21:13:08.000+0000}, {email=Arnold7d8a6a1a-4e2f-4bf9-a2c6-245fe25f3a8e@termgrid.com, firstName=Elvin, lastName=Doyle, companyId=468904, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/e57e809c-7c6b-4f36-aa11-0576be296967/company/468904, companyName=Giant Siffc0be403-3a7a-4038-b20a-193947df972c, invitedDate=2022-01-16T15:32:15.000+0000}, {email=Tinisha367434ef-3069-4caf-bbf6-7d5fd4a981af@termgrid.com, firstName=Jacelyn, lastName=Lang, companyId=468915, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/28f6bda0-64b4-440e-81a1-76cffd8ab260/company/468915, companyName=Clea Eyesc86f2bf3-269e-47b3-8d5b-910f87e9dba9, invitedDate=2022-01-16T15:33:21.000+0000}, {email=Rhona6933d75d-4480-4995-a8e8-920c0221e9f5@termgrid.com, firstName=Mary, lastName=Wehner, companyId=469124, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/90762169-b950-484e-b230-7f2fa6a569eb/company/469124, companyName=Mandarin Woman67c114cd-60e0-4aef-80bf-0d56f2f9699d, invitedDate=2022-01-17T13:56:36.000+0000}, {email=Kirkef6739c8-2d06-4bf2-8c5e-6a60ba9ba219@termgrid.com, firstName=Valrie, lastName=Daniel, companyId=469135, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/b21b6589-f404-4545-a601-833f7ca8f6d6/company/469135, companyName=Penguin9f5d078a-99e0-4a65-a476-795b37a51c14, invitedDate=2022-01-17T14:04:41.000+0000}, {email=Lonny89d54912-2e61-4971-890c-03d6a124aa33@termgrid.com, firstName=Emmanuel, lastName=Gleason, companyId=469146, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/efab7fa0-e970-4999-b35f-57178408a16f/company/469146, companyName=Toxin IX3391f0e3-6756-476a-b507-a7cae4e9245a, invitedDate=2022-01-17T14:09:38.000+0000}, {email=aaaaaa@gmail.com, firstName=abc, lastName=ccccv, companyId=433987, title=Donnie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/43bc0733-f1a6-443b-a68c-6bd3576b8dfe/company/433987, companyName=testing 2023, invitedDate=2022-01-17T15:49:17.000+0000}, {email=ddd@ff.com, firstName=dddd, lastName=dddd, companyId=71386, title=Donnie, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/71386, companyName=007, invitedDate=2022-01-17T15:50:04.000+0000}, {email=jan.neutard@gmail.com, firstName=Jan, lastName=Neutard, companyId=9148, title=Test hshshsh, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/9148, companyName=aasim nov28, invitedDate=2022-01-18T15:43:32.000+0000}, {email=test@test.com, firstName=Sebastian, lastName=Konz, companyId=65016, title=Test hshshsh, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/null/company/65016, companyName=abcdfss, invitedDate=2022-01-18T15:44:20.000+0000}, {email=Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com, firstName=Edna, lastName=Feeney, companyId=476339, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/837c8580-a639-4bf3-aaa3-93a6dc47baf4/company/476339, companyName=Mr Krypto the Fated03e82f45-0151-4bbc-b43a-f4e359293eba, invitedDate=2022-01-18T22:23:31.000+0000}, {email=Cathern0b0f8456-0cb6-430b-99dc-b6bf04d6bc28@termgrid.com, firstName=Asuncion, lastName=Schaden, companyId=476341, invitationStatus=PENDING, admin=false, inviteLink=https://testing.termgrid.com/join-team/7ef7828e-557b-463c-8cfc-06f1ee982ea8/company/476341, companyName=Dark Hollow62130b7e-cea4-421a-b295-1ee7d9eee022, invitedDate=2022-01-18T22:23:31.000+0000}]"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "teamMemberEmail",
+          "value" : "Cathern0b0f8456-0cb6-430b-99dc-b6bf04d6bc28@termgrid.com"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "newAdminTeamUserPasswordSet",
+        "time" : {
+          "start" : 1642544612576,
+          "stop" : 1642544613076,
+          "duration" : 500
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "getJoinTeamLoginBuilder",
+          "time" : {
+            "start" : 1642544612576,
+            "stop" : 1642544612577,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544612587,
+            "stop" : 1642544613076,
+            "duration" : 489
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "7b94c3466c32e836",
+            "name" : "Request",
+            "source" : "7b94c3466c32e836.html",
+            "type" : "text/html",
+            "size" : 955
+          }, {
+            "uid" : "c26cafaa0f52b80d",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "c26cafaa0f52b80d.html",
+            "type" : "text/html",
+            "size" : 1148
+          } ],
+          "parameters" : [ {
+            "name" : "url",
+            "value" : "http://testing.termgrid.com:9500/api/rest/users/join-team/7ef7828e-557b-463c-8cfc-06f1ee982ea8/company/476341"
+          }, {
+            "name" : "joinTeamLoginRequest",
+            "value" : "JoinTeamLoginRequest(newPassword=test, confirmPassword=test)"
+          }, {
+            "name" : "username",
+            "value" : "aasim@inncretech.com"
+          }, {
+            "name" : "password",
+            "value" : "Demo12#$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "joinLink",
+          "value" : "http://testing.termgrid.com:9500/api/rest/users/join-team/7ef7828e-557b-463c-8cfc-06f1ee982ea8/company/476341"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "UpdateTransactionRights",
+        "time" : {
+          "start" : 1642544613076,
+          "stop" : 1642544613401,
+          "duration" : 325
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "updateTransactionRequest",
+          "time" : {
+            "start" : 1642544613077,
+            "stop" : 1642544613077,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerResponse",
+            "value" : "RegisterResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=7dc99db786ee32a9c15c57a5603c716332373bf1c7e1dcab1cec627698fa8ed5, emailVerified=false, elementPermissions=[])"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "post",
+          "time" : {
+            "start" : 1642544613079,
+            "stop" : 1642544613401,
+            "duration" : 322
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "7b39049110a6b85e",
+            "name" : "Request",
+            "source" : "7b39049110a6b85e.html",
+            "type" : "text/html",
+            "size" : 971
+          }, {
+            "uid" : "eaa4c40a2bc95d75",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "eaa4c40a2bc95d75.html",
+            "type" : "text/html",
+            "size" : 661
+          } ],
+          "parameters" : [ {
+            "name" : "updateTransactionRequest",
+            "value" : "UpdateTransactionRequest(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, status=true)"
+          }, {
+            "name" : "username",
+            "value" : "aasim@inncretech.com"
+          }, {
+            "name" : "password",
+            "value" : "Demo12#$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=santosh+07217736-4e11-4667-85dc-deef02f44676@termgrid.com, userId=4555290807245997227, firstName=Ettie, lastName=Vandervort, isActive=true, phoneNumber=343.457.7113, authToken=7dc99db786ee32a9c15c57a5603c716332373bf1c7e1dcab1cec627698fa8ed5, emailVerified=false, elementPermissions=[])"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 22,
+      "attachmentsCount" : 16,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "attachmentsCount" : 16,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCreateCompanyFlow"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-33"
+  }, {
+    "name" : "thread",
+    "value" : "2844@fv-az189-33.TestNG-test=Surefire test-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "45bca9938e1b0000.json",
+  "parameterValues" : [ ]
+}

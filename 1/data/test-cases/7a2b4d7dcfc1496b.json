@@ -1,0 +1,328 @@
+{
+  "uid" : "7a2b4d7dcfc1496b",
+  "name" : "verify_post_admin_approval_create_transaction_is_enabled_for_user",
+  "fullName" : "com.termgrid.api.tests.E2ETests.verify_post_admin_approval_create_transaction_is_enabled_for_user",
+  "historyId" : "c84cc90427c28fc60d4b6458c5ba5855",
+  "time" : {
+    "start" : 1642544613375,
+    "stop" : 1642544614556,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642544613373,
+      "stop" : 1642544613373,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "UpdateTransactionRights",
+      "time" : {
+        "start" : 1642544613375,
+        "stop" : 1642544613670,
+        "duration" : 295
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "updateTransactionRequest",
+        "time" : {
+          "start" : 1642544613375,
+          "stop" : 1642544613375,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com, userId=null, firstName=null, lastName=null, isActive=null, phoneNumber=null, authToken=null, emailVerified=null, elementPermissions=null)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "post",
+        "time" : {
+          "start" : 1642544613375,
+          "stop" : 1642544613670,
+          "duration" : 295
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "12ebd8eb5be7a8fc",
+          "name" : "Request",
+          "source" : "12ebd8eb5be7a8fc.html",
+          "type" : "text/html",
+          "size" : 971
+        }, {
+          "uid" : "fa6f928250cc34d7",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "fa6f928250cc34d7.html",
+          "type" : "text/html",
+          "size" : 661
+        } ],
+        "parameters" : [ {
+          "name" : "updateTransactionRequest",
+          "value" : "UpdateTransactionRequest(email=santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com, status=true)"
+        }, {
+          "name" : "username",
+          "value" : "aasim@inncretech.com"
+        }, {
+          "name" : "password",
+          "value" : "Demo12#$"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "registerResponse",
+        "value" : "RegisterResponse(email=santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com, userId=null, firstName=null, lastName=null, isActive=null, phoneNumber=null, authToken=null, emailVerified=null, elementPermissions=null)"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "getUserDetails",
+      "time" : {
+        "start" : 1642544613670,
+        "stop" : 1642544613961,
+        "duration" : 291
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get",
+        "time" : {
+          "start" : 1642544613670,
+          "stop" : 1642544613961,
+          "duration" : 291
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "8256c9a0451f5c06",
+          "name" : "Request",
+          "source" : "8256c9a0451f5c06.html",
+          "type" : "text/html",
+          "size" : 641
+        }, {
+          "uid" : "f2f6ea413cd29b58",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "f2f6ea413cd29b58.html",
+          "type" : "text/html",
+          "size" : 1350
+        } ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "UpdateTransactionRights",
+      "time" : {
+        "start" : 1642544613961,
+        "stop" : 1642544614254,
+        "duration" : 293
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "updateTransactionRequest",
+        "time" : {
+          "start" : 1642544613961,
+          "stop" : 1642544613961,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerResponse",
+          "value" : "RegisterResponse(email=Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com, userId=null, firstName=null, lastName=null, isActive=null, phoneNumber=null, authToken=null, emailVerified=null, elementPermissions=null)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "post",
+        "time" : {
+          "start" : 1642544613961,
+          "stop" : 1642544614254,
+          "duration" : 293
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "71993e13e55e877c",
+          "name" : "Request",
+          "source" : "71993e13e55e877c.html",
+          "type" : "text/html",
+          "size" : 967
+        }, {
+          "uid" : "e9377328ce57ac2f",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "e9377328ce57ac2f.html",
+          "type" : "text/html",
+          "size" : 661
+        } ],
+        "parameters" : [ {
+          "name" : "updateTransactionRequest",
+          "value" : "UpdateTransactionRequest(email=Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com, status=true)"
+        }, {
+          "name" : "username",
+          "value" : "aasim@inncretech.com"
+        }, {
+          "name" : "password",
+          "value" : "Demo12#$"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "registerResponse",
+        "value" : "RegisterResponse(email=Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com, userId=null, firstName=null, lastName=null, isActive=null, phoneNumber=null, authToken=null, emailVerified=null, elementPermissions=null)"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "getUserDetails",
+      "time" : {
+        "start" : 1642544614254,
+        "stop" : 1642544614555,
+        "duration" : 301
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get",
+        "time" : {
+          "start" : 1642544614254,
+          "stop" : 1642544614555,
+          "duration" : 301
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6f40a6d6a9a5dfe4",
+          "name" : "Request",
+          "source" : "6f40a6d6a9a5dfe4.html",
+          "type" : "text/html",
+          "size" : 641
+        }, {
+          "uid" : "b5377e5425cf55cd",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "b5377e5425cf55cd.html",
+          "type" : "text/html",
+          "size" : 1350
+        } ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "santosh+d264f793-18fb-4347-8419-e428cf897fa0@termgrid.com"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify_post_admin_approval_create_transaction_is_enabled_for_user"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.termgrid.api.tests.E2ETests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-33"
+  }, {
+    "name" : "thread",
+    "value" : "2844@fv-az189-33.TestNG-test=Surefire test-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a2b4d7dcfc1496b.json",
+  "parameterValues" : [ ]
+}

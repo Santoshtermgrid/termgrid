@@ -1,0 +1,36 @@
+<div>POST to http://testing.termgrid.com:9500/api/rest/invite</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;firstName&quot;: &quot;Edna&quot;,
+    &quot;lastName&quot;: &quot;Feeney&quot;,
+    &quot;email&quot;: &quot;Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com&quot;,
+    &quot;elementType&quot;: &quot;LENDER&quot;,
+    &quot;companyId&quot;: &quot;476339&quot;,
+    &quot;admin&quot;: true
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Basic c2FudG9zaCtkMjY0Zjc5My0xOGZiLTQzNDctODQxOS1lNDI4Y2Y4OTdmYTBAdGVybWdyaWQuY29tOnRlc3Q=</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://testing.termgrid.com:9500/api/rest/invite&#39; -H &#39;Authorization: Basic c2FudG9zaCtkMjY0Zjc5My0xOGZiLTQzNDctODQxOS1lNDI4Y2Y4OTdmYTBAdGVybWdyaWQuY29tOnRlc3Q=&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;firstName&quot;: &quot;Edna&quot;,
+    &quot;lastName&quot;: &quot;Feeney&quot;,
+    &quot;email&quot;: &quot;Allena35bf40d4-0737-458a-af7a-99d1afb95e42@termgrid.com&quot;,
+    &quot;elementType&quot;: &quot;LENDER&quot;,
+    &quot;companyId&quot;: &quot;476339&quot;,
+    &quot;admin&quot;: true
+}&#39;
+</div>

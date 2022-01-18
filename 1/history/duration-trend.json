@@ -1,3 +1,10 @@
 [ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://Santoshtermgrid.github.io/termgrid/1/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 10196
+  }
+}, {
   "data" : { }
 } ]
