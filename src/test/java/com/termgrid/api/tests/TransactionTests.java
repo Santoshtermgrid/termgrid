@@ -1,5 +1,5 @@
 package com.termgrid.api.tests;
-
+/*
 import com.termgrid.api.appApi.clients.commons.restassured.StatusCode;
 import com.termgrid.api.appApi.clients.element.AddPETransactionAPI;
 import com.termgrid.api.appApi.clients.element.DeletePETransactionApi;
@@ -99,4 +99,4 @@ public class TransactionTests extends BaseTest {
         assertThat(deleted, equalTo("false"));
     }
 
-}
+}*/
