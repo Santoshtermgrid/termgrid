@@ -13,6 +13,14 @@ public class ApiEndPoints {
     public static final String inviteUserToTeamUrl="api/rest/invite";
     public static final String createJoinLinkUrl="api/rest/admin/dashboard/createJoinLink/";
     public  static final String updateTransactionUrl="/api/rest/admin/dashboard/updateTeamMemberTransactionRights";
-public  static  final String getUserUrl="api/rest/users/getUser";
+    public  static  final String getUserUrl="api/rest/users/getUser";
+
+    public static final String addFolderElementUrl = "api/rest/element/addFolderElement";
+    public static final String addFileToDataRoomUrl = "api/rest/fileelement/addFile";
+    public static final String createLenderUnderCompanyUrl = "/api/rest/company/byLender";
+    public static final String assignLenderToTransactionUrl = "/api/rest/lenders";
+    public static final String createTermSheetUrl = "api/rest/new-webform/createWebFormConfig/{transactionid}";
+    public static final String createEventUrl = "/api/rest/deadline/create";
+    public static final String deletedCreatedEventUrl = "/api/rest/deadline/delete";
 
 }

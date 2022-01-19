@@ -52,6 +52,18 @@ public class RestResource {
                 response();
     }
 
+    public static Response post(String path, Object body,Map<String, String> pathParams){
+        return RestAssured.given(getRequestSpec()).
+                body(body).
+                pathParams(pathParams).
+                auth().preemptive().basic(DataLoader.getInstance().getUsername(),DataLoader.getInstance().getPassword()).
+                contentType(ContentType.JSON).
+                when().post(path).
+                then().spec(getResponseSpec()).
+                statusCode(200).
+                extract().
+                response();
+    }
 
     public static Response deletebyPathParam(String path, Object body, Map<String, String> pathParams){
         return RestAssured.given(getRequestSpec()).
