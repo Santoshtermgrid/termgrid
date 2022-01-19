@@ -2,7 +2,6 @@ package com.termgrid.api.services;
 
 import com.termgrid.api.appApi.clients.assignlendertotransaction.AssignLenderToTransactionAPI;
 import com.termgrid.api.appApi.clients.assignlendertotransaction.CreateCompanyByLenderAPI;
-import com.termgrid.api.appApi.clients.commons.restassured.StatusCode;
 import com.termgrid.api.appApi.clients.commons.utils.DataLoader;
 import com.termgrid.api.appApi.clients.commons.utils.FakerUtils;
 import com.termgrid.api.appApi.clients.dataroom.AddDataRoomAPI;
@@ -13,39 +12,53 @@ import com.termgrid.api.appApi.clients.users.GetUserDetails;
 import com.termgrid.api.appApi.pojos.assignlendertotransaction.AssignLenderToTransPojo;
 import com.termgrid.api.appApi.pojos.assignlendertotransaction.CompanyDTOPojo;
 import com.termgrid.api.appApi.pojos.assignlendertotransaction.CreateLenderPojo;
+import com.termgrid.api.appApi.pojos.company.AddCompanyResponse;
 import com.termgrid.api.appApi.pojos.dataroom.AddDataRoomPojo;
 import com.termgrid.api.appApi.pojos.dataroom.AddDocumentsIntoDataRoomPojo;
 import com.termgrid.api.appApi.pojos.dataroom.FileDTOPojo;
 import com.termgrid.api.appApi.pojos.dataroom.ParentFileElementPojo;
 import com.termgrid.api.appApi.pojos.element.AddPETransactionRequest;
+import com.termgrid.api.appApi.pojos.element.AddPETransactionResponse;
 import com.termgrid.api.appApi.pojos.element.IndustryDTOSet;
 import com.termgrid.api.appApi.pojos.termsheet.AddTermSheetRequestPojo;
+import com.termgrid.api.appApi.pojos.users.CustomerLoginResponse;
+import com.termgrid.api.appApi.pojos.users.RegisterResponse;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import java.util.Arrays;
 import java.util.HashMap;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class TransactionFlowService {
     UserFlowContext userFlowContext = new UserFlowContext();
     Response response = null;
+    UserFlowService userFlowService = new UserFlowService();
 
+    /**
+     * "CreateTransaction" method create a new transaction under the company
+     * @return JSON schema for Response
+     */
     @Step
     public Response CreateTransaction() {
+        RegisterResponse registerResponse = userFlowService.newUserRegistration();
+        CustomerLoginResponse customerLoginResponse = userFlowService.newUserLoginPostVerification(registerResponse);
+        AddCompanyResponse addCompanyResponse = userFlowService.createNewCompany(customerLoginResponse);
         AddPETransactionRequest payload = AddPETransactionRequest.builder().
-                companyId("2")
+                companyId(addCompanyResponse.getId())
                 .companyToBuy(FakerUtils.generateName())
                 .peTransactionTitle(FakerUtils.generateName())
                 .targetDate(1640889000000l)
                 .industryDTOSet(Arrays.asList(IndustryDTOSet.builder().active(true)
-                        .id("10966")
-                        .approved(true).name("Chemicals").build())).build();
+                        .id(addCompanyResponse.industries.get(0).getId())
+                        .approved(true).name(addCompanyResponse.industries.get(0).getName()).build())).build();
         response = AddPETransactionAPI.post(payload, DataLoader.getInstance().getUsername(), DataLoader.getInstance().getPassword());
         userFlowContext.setPeTransactionId(response.jsonPath().getString("peTransactionId"));
         return response;
     }
 
+    /**
+     * "createTermSheet" method create a new TermSheet under the transaction
+     * @return JSON schema for Response
+     */
     @Step
     public Response createTermSheet() {
         AddTermSheetRequestPojo payload = AddTermSheetRequestPojo.builder().name(FakerUtils.generateName()).build();
@@ -53,10 +66,13 @@ public class TransactionFlowService {
         pathParams.put("transactionid", userFlowContext.getPeTransactionId());
         response = CreateTermSheetAPI.post(payload, pathParams);
         userFlowContext.setTermSheetId(response.jsonPath().getString("id"));
-        System.out.println("TermSheet:- " + response.jsonPath().getString("id"));
         return response;
     }
 
+    /**
+     * "createDataRoom" method create a new DataRoom under the transaction
+     * @return JSON schema for Response
+     */
     @Step
     public Response createDataRoom() {
         AddDataRoomPojo payload = AddDataRoomPojo.builder().
@@ -68,6 +84,10 @@ public class TransactionFlowService {
     }
 
 
+    /**
+     * "addTheDocumentsIntoDataRoom" method upload the documents under dataroom
+     * @return JSON schema for Response
+     */
     @Step
     public Response addTheDocumentsIntoDataRoom() {
         response = GetUserDetails.get(DataLoader.getInstance().getUsername(), DataLoader.getInstance().getPassword());
@@ -80,18 +100,34 @@ public class TransactionFlowService {
         return response = AddFileToDataRoomAPI.post(payload);
     }
 
+    /**
+     * "addTheDocumentsIntoDataRoom" method upload the documents under dataroom
+     * @param noOfDocs nNumber of documents need to be uploaded
+     * @return JSON schema for Response
+     */
+    @Step
+    public Response addTheDocumentsIntoDataRoom(int noOfDocs) {
+
+        return response;
+    }
+
+    /**
+     * "createNewLenderForCompany" method create new lender company
+     * @return JSON schema for Response
+     */
     @Step
     public Response createNewLenderForCompany() {
         CreateLenderPojo payload = CreateLenderPojo.builder().name(FakerUtils.generateName()).build();
         Response response = CreateCompanyByLenderAPI.post(payload,DataLoader.getInstance().getUsername(), DataLoader.getInstance().getPassword());
         userFlowContext.setLenderID(response.getBody().jsonPath().getString("id"));
         userFlowContext.setLenderName(response.getBody().jsonPath().getString("name"));
-        assertThat(response.statusCode(), equalTo(StatusCode.CODE_200.getCode()));
-        System.out.println("New Lender:- "+ userFlowContext.getLenderID());
-        System.out.println("New Lender:- "+ userFlowContext.getLenderName());
         return response;
     }
 
+    /**
+     * "assignNewlyCreatedLenderToTransaction" method assign lender to transaction
+     * @return JSON schema for Response
+     */
     @Step
     public Response assignNewlyCreatedLenderToTransaction() {
         CompanyDTOPojo cDTO = CompanyDTOPojo.builder().createdBy(userFlowContext.getUserID()).id(userFlowContext.getLenderID()).name(userFlowContext.getLenderName()).tncApproved(true).payment(false).build();
